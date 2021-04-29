@@ -27,7 +27,7 @@ const AuthContextProvider = ({children}) => {
         }
 
         try{
-            const { data } = await axios.post(`${AUTH_API}/api/auth/login`, user)
+            const { data } = await axios.post(`${AUTH_API}/api/auth/login`, newUser)
             history.push('/')
             console.log(data)
         }catch(err){
@@ -39,7 +39,7 @@ const AuthContextProvider = ({children}) => {
     return ( 
         <authContext.Provider value={{
             registerUser,
-            loginUser
+            //loginUser
             }}>
             {children}
         </authContext.Provider>
