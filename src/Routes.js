@@ -1,19 +1,21 @@
-import React from 'react';
-import {BrowserRouter,Switch, Route} from "react-router-dom" 
+import MainScreen from './components/MainScreen/MainScreen';
+import {BrowserRouter,Switch} from "react-router-dom" 
 import Footer from './components/Footer/Footer';
 import Header from "./components/Header/Header"
+import React from 'react';
 
 
 const Routes = () => {
    return (
       <BrowserRouter>
-         <Header></Header>
+         <Header />
             <Switch>
-
+              <MainScreen />
             </Switch>
          <Footer/>
       </BrowserRouter>
    );
+
 };
 
 export default Routes;
