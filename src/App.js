@@ -1,14 +1,13 @@
-import React from "react";
-import Routes from "./Routes";
+import React from 'react';
+import  Routes  from './Routes';
 
-function App() {
-    return (
-        <div className="App">
-            <Routes>
-                
-            </Routes>
-        </div>
-    );
-}
+const App = () => {
+  return (
+    <div>
+      <Routes/>
+    </div>
+  );
+};
+
 
 export default App;
