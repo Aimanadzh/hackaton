@@ -28,23 +28,21 @@ return (
                     <span></span>
                 </label>
                 <ul className="navbar__menu menu__box">
-                    <li><Link to="" style={{textDecoration: 'none'}}>Jeverly</Link></li>
-                    <li><Link style={{textDecoration: 'none'}}>Watches</Link></li>
-                    <li><Link style={{textDecoration: 'none'}}>Accessories</Link></li>
-                    <li><Link style={{textDecoration: 'none'}}>Decoration</Link></li>
-                    <li><Link style={{textDecoration: 'none'}}>Gift</Link></li>
-                    <li><Link style={{textDecoration: 'none'}}><img className="navbar__search" src={SearchLogo} alt="search" /></Link></li>
+                <li><Link className="asd" to="" style={{textDecoration: 'none', color: 'white'}}>Jeverly</Link></li>
+                        <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Watches</Link></li>
+                        <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Accessories</Link></li>
+                        <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Decoration</Link></li>
+                        <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Gift</Link></li>
+                        <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}><img className="navbar__search" src={SearchLogo} alt="search" /></Link></li>
                 </ul>
             </div>
         </div>
 
-
-
-
-    </header>
+        </header>
 );
 
 }
+
 
 
 
