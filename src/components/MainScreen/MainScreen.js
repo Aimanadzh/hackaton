@@ -16,7 +16,6 @@ const MainScreen = () => {
          <div className="text">
             <h1>Make It Work <br/> When home is your HQ, every screen moments is an opportunity <br/> for endless glamour and fun</h1>
             <button>Discover more</button>
-            <button>Shop The Collection</button>
          </div>
         </>
     );

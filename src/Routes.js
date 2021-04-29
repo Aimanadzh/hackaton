@@ -4,7 +4,8 @@ import Footer from './components/Footer/Footer';
 import Header from "./components/Header/Header"
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
-import AuthContextProvider from './context/AuthContext'
+import AuthContextProvider from '../src/context/AuthContext'
+
 import React from 'react';
 
 
