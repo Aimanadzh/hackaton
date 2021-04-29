@@ -36,11 +36,33 @@ const AuthContextProvider = ({children}) => {
 
     }
 
+
+    async function loginUser (e, history) {
+        e.preventDefault()
+
+        const user = {
+            email: e.target[0].value,
+            password: e.target[2].value
+        }
+
+        try{
+            const { data } = await axios.post(`${AUTH_API}/api/auth/login`, user)
+            history.push('/')
+            console.log(data)
+        }catch(err){
+            console.log(err.response)
+        }
+    }
+
     return ( 
         <authContext.Provider value={{
             registerUser,
+<<<<<<< HEAD
+            loginUser
+=======
             //loginUser
  
+>>>>>>> 08c5d3e533a0464ca3a5bc2266dc2afdcc6ee119
             }}>
             {children}
         </authContext.Provider>
