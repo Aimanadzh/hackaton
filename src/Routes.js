@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { BrowserRouter,Switch, Route } from 'react';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
-import AuthContextProvider from './components'
+import AuthContextProvider from './context/AuthContext';
 
 const Routes = () => {
     return (
