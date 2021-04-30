@@ -1,7 +1,10 @@
 .headers{
-   background-color: #F0EEE4;
-   margin: 0;
+   margin: -8px;
 }
+.headers:hover{
+   background-color: #F0EEE4;
+}
+
 .container{
    max-width: 1200px;
 }
@@ -9,26 +12,32 @@
    text-align: right;
    cursor: pointer;
 }
+.navbar__logo{
+   height: 170px;
+}
+/*.navbar__logo:hover{
+   
+}*/
 .headers__title{
    margin: 0;
    cursor: pointer;
-   /*width: 100%;
-   background: url("../../assets/images/brandlogo.svg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   */
 }
 .header__navbar{
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+}
+
+.nav{
+   margin-left: 10px;
+   margin-right: 10px;
 }
 .navbar__menu{
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
    list-style-type: none;
    width: 960px;
    padding-left: 0;
+   
 }
 .hamburger-menu{
    display: flex;
