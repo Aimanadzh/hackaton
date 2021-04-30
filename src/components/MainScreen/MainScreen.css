@@ -9,3 +9,26 @@
     color: white;
     margin-left: 30px;
 }
+
+.text-decor {
+    text-align: center;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 3rem;
+    
+}
+
+.more_btn {
+    background-color: white;
+    color: black;
+    width: 15rem;
+    height: 2.5rem;
+}
+
+.more__btn {
+    width: 15rem;
+    
+}

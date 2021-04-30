@@ -14,9 +14,12 @@ const MainScreen = () => {
             />
          </div>
          <div className="text">
-            <h1>Make It Work <br/> When home is your HQ, every screen moments is an opportunity <br/> for endless glamour and fun</h1>
-            <button>Discover more</button>
-            <button>Shop The Collection</button>
+            <h1 className="text__decor">Make It Work </h1>
+            <h3>When home is your HQ, every screen moments is an opportunity <br/> for endless glamour and fun</h3>
+            <div className="buttons">
+            <button className="more_btn">Discover more</button>
+            <button className="more__btn">Shop The Collection</button>
+            </div>
          </div>
         </>
     );
