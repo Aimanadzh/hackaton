@@ -1,32 +1,47 @@
-import MainScreen from './components/MainScreen/MainScreen';
-import {BrowserRouter,Switch, Route} from "react-router-dom" 
-import Footer from './components/Footer/Footer';
-import Header from "./components/Header/Header"
-import SignIn from './components/SignIn/SignIn';
-import SignUp from './components/SignUp/SignUp';
-import AuthContextProvider from '../src/context/AuthContext'
-import Gif from './assets/video/gif.mp4'
-import Carousel from './components/Carousel/Carousel'
-
 import React from 'react';
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Admin from './components/Admin/Admin';
+import SignUp from './components/SignUp/SignUp';
+import Home from './components/Home/Home';
+import PaymentForm from './components/PaymentForm/Payment';
+import AddProduct from './components/AddProduct/AddProduct';
+import ProductListAdmin from './components/ProductListAdmin/ProductListAdmin';
+import Login from './components/LogIn/LogIn';
+import EditModal from './components/EditModal/Edit';
+import Modal from './components/EditModal/Modal';
+import ProductsListUser from './components/ProductListUser/ProductListUser';
+import Cart from './components/Cart/Cart';
+import AuthContextProvider from './context/AuthContext';
+import ProductsContextProvider from './context/ProductsContext';
+import PrivateRoute from './components/PrivateRoute';
 
 const Routes = () => {
-   return (
-      <AuthContextProvider>
-      <BrowserRouter>
-         <Header />
-            <Switch>
-                    <Route exact path="/login" component={SignIn}/>
-                    <Route exact path="/signup" component={SignUp}/>
-              <MainScreen />
-              <Gif />
-              <Carousel />
-            </Switch>
-         <Footer/>
-      </BrowserRouter>
-       </AuthContextProvider>
-   );
+
+  return (
+    <AuthContextProvider>
+      <ProductsContextProvider>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <PrivateRoute exact path ="/admin" component={Admin} />
+            <Route exact path ="/" component={Home} />
+            <Route exact path = "/signup" component={SignUp} />
+            <Route exact path = "/payment" component={PaymentForm} />
+            <Route exact path = "/addproduct" component={AddProduct} />
+            <Route exact path = "/market" component={ProductListAdmin} />
+            {/* <Route exact path="/details" component={Details} /> */}
+            <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/edit/:id" component={EditModal} />
+            <Route exact path="/modal" component={Modal} />
+            <Route exact path="/shop" component={ProductsListUser} />
+            <Route exact path="/cart" component={Cart} />
+          </Switch>
+        </BrowserRouter>
+      </ProductsContextProvider>
+    </AuthContextProvider>
+  );
 
 };
 
