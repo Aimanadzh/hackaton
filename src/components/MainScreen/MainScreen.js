@@ -20,7 +20,7 @@ const MainScreen = () => {
             <button className="text__btn">Shop all</button>
         </div>
 
-        </div>
+
         <div className="gifka">
         <Video 
         className="gifka"
@@ -31,7 +31,6 @@ const MainScreen = () => {
         </>
     );
 };
-    
+
 
 export default MainScreen;
-
