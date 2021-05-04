@@ -1,69 +1,24 @@
-import axios from 'axios';
-import React, { useReducer } from 'react';
-import { AUTH_API } from '../helpers/constants';
+import React, { useEffect, useState } from "react";
+import app from "../../src/FireBase";
 
+export const AuthContext = React.createContext();
 
-export const authContext = React.createContext();
-    const INIT_STATE = {}
+const AuthProvider = ({ children }) => {
+    const [currentUser, setCurrentUser] = useState({});
 
-
-const reducer = (state = INIT_STATE, action) => {
-    switch(action.type){
-        case '...':
-            default: return state
-    }
-}
-
-
-const AuthContextProvider = ({children}) => {
-    const [ state, dispatch ] = useReducer(reducer, INIT_STATE)
-
-    async function registerUser (e, history) {
-        e.preventDefault()
-
-        const newUser = {
-            email: e.target[0].value,
-            password: e.target[2].value
-        }
-
-        try{
-            const { data } = await axios.post(`${AUTH_API}/api/auth/login`, newUser)
-            history.push('/')
-            console.log(data)
-        }catch(err){
-            console.log(err.response)
-        }
-
-    }
-
-
-    async function loginUser (e, history) {
-        e.preventDefault()
-
-        const user = {
-            email: e.target[0].value,
-            password: e.target[2].value
-        }
-
-        try{
-            const { data } = await axios.post(`${AUTH_API}/api/auth/login`, user)
-            history.push('/')
-            console.log(data)
-        }catch(err){
-            console.log(err.response)
-        }
-    }
-
-    return ( 
-        <authContext.Provider value={{
-            registerUser,
-            loginUser
-            }}>
+    useEffect(() => {
+        app.auth().onAuthStateChanged(setCurrentUser);
+    }, []);
+    return (
+        <AuthContext.Provider
+            value={{
+                currentUser,
+            }}
+        >
             {children}
-        </authContext.Provider>
-    )
+        </AuthContext.Provider>
+    );
+};
 
-}
+export default AuthProvider;
 
-
-export default AuthContextProvider;
