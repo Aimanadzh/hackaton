@@ -10,7 +10,8 @@
             "Material": "Rose-gold tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_auto,f_auto,w_auto/5480507_png/crystalline-oval-watch--metal-bracelet--black--rose-gold-tone-pvd-swarovski-5480507.png"
-          },
+        },
+ 
           {
             "id": 1,
             "category": "Watches",
@@ -21,8 +22,11 @@
             "Material": "Rose-gold tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5230946_png/crystalline-oval-watch--leather-strap--white--rose-gold-tone-pvd-swarovski-5230946.png"
-          },
+
+        },
+
           {
+
             "id": 2,
             "category": "Watches",
             "name": "Crystalline Oval Watch",
@@ -32,8 +36,11 @@
             "Material": "Leather", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5414413_png/octea-lux-watch--leather-strap--blue--rose-gold-tone-pvd-swarovski-5414413.png"
-          },
+
+        },
+
           {
+
             "id": 3,
             "category": "Watches",
             "name": "Crystal Flower Watch",
@@ -43,8 +50,11 @@
             "Material": "Leather", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5552780_png/crystal-flower-watch--leather-strap--red--rose-gold-tone-pvd-swarovski-5552780.png"
-          },
+
+        },
+
           {
+
             "id": 4,
             "category": "Watches",
             "name": "Octea Lux Chrono Watch",
@@ -54,8 +64,11 @@
             "Material": "Leather", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5452498_png/octea-lux-chrono-watch--leather-strap--green--rose-gold-tone-pvd-swarovski-5452498.png"
-          },
+
+        },
+
           {
+
             "id": 5,
             "category": "Jewerly",
             "name": "Angelic Rectangular Necklace",
@@ -65,8 +78,11 @@
             "Material": "Rhodium plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5559380_png/angelic-rectangular-necklace--green--rhodium-plated-swarovski-5559380.png"
-          },
+
+        },
+
           {
+
             "id": 6,
             "category": "Jewerly",
             "name": "Tigris Cuff",
@@ -76,8 +92,11 @@
             "Material": "Rhodium plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5569069_png/tigris-cuff--white--gold-tone-plated-swarovski-5569069.png"
-          },
+
+        },
+
           {
+
             "id": 7,
             "category": "Jewerly",
             "name": "Beautiful Earth by Susan Rockefeller Necklace",
@@ -87,8 +106,11 @@
             "Material": "Gold-tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5535897_png/beautiful-earth-by-susan-rockefeller-necklace--bib--dark-multi-colored--gold-tone-plated-swarovski-5535897.png"
-          },
+
+        },
+
           {
+
             "id": 8,
             "category": "Jewerly",
             "name": "Curiosa stud earring",
@@ -98,8 +120,11 @@
             "Material": "Swarovski crystals, Gold-tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5606952_png/curiosa-stud-earring--single--round--blue--gold-tone-plated-swarovski-5606952.png"
-          },
+
+        },
+
           {
+
             "id": 9,
             "category": "Jewerly",
             "name": "Beautiful Earth by Susan Rockefeller Ring Set",
@@ -109,8 +134,11 @@
             "Material": "Gold-tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5535895_png/beautiful-earth-by-susan-rockefeller-ring-set-%286%29--dark-multi-colored--gold-tone-plated-swarovski-5535895.png"
-          },
+
+        },
+
           {
+
             "id": 10,
             "category": "Jewerly",
             "name": "Swarovski Sparkling Dance Round Necklace",
@@ -120,8 +148,11 @@
             "Material": "Rose-gold tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5279421_png/swarovski-sparkling-dance-round-necklace--red--rose-gold-tone-plated-swarovski-5279421.png"
-          },
+
+        },
+
           {
+
             "id": 11,
             "category": "Accessories",
             "name": "Crystalline Celebration 2021 Ballpoint Pen",
@@ -131,8 +162,11 @@
             "Material": "Metal", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5553339_png/crystalline-celebration-2021-ballpoint-pen--white--rose-gold-tone-plated-swarovski-5553339.png"
-          },
+
+        },
+
           {
+
             "id": 12,
             "category": "Accessories",
             "name": "High Smartphone Case with Bumper",
@@ -142,8 +176,11 @@
             "Material": "TPU (thermoplastic polyurethane), Stainless steel", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5533961_png/high-smartphone-case-with-bumper--iphone%C2%AE-11-pro--gold-tone-swarovski-5533961.png"
-          },
+
+        },
+
           {
+
             "id": 13,
             "category": "Accessories",
             "name": "Swarovski Sunglasses",
@@ -153,8 +190,11 @@
             "Material": "Rose-gold tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5600905_png/swarovski-sunglasses--sk0306-h-28b--rose-gold-tone-swarovski-5600905.png"
-          },
+
+        },
+
           {
+
             "id": 14,
             "category": "Accessories",
             "name": "Glam Rock Ring Sticker",
@@ -164,8 +204,11 @@
             "Material": "Rose-gold tone plated, Stainless steel", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5457469_png/glam-rock-ring-sticker--black--mixed-plating-swarovski-5457469.png"
-          },
+
+        },
+
           {
+
             "id": 15,
             "category": "Accessories",
             "name": "Minnie Smartphone case",
@@ -175,8 +218,11 @@
             "Material": "Acrylonitrile butadiene styrene (thermoplastic polyurethane Phone model: iPhone® 12 Pro Max", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5565207_png/minnie-smartphone-case--iphone%C2%AE-12-pro-max--multicolored-swarovski-5565207.png"
-          },
+
+        },
+
           {
+
             "id": 16,
             "category": "Accessories",
             "name": "Zodiac Cow Bag Charm",
@@ -186,8 +232,11 @@
             "Material": "Rose-gold tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5552795_png/zodiac-cow-bag-charm--purple--rose-gold-tone-plated-swarovski-5552795.png"
-          },
+
+        },
+
           {
+
             "id": 17,
             "category": "Decorations",
             "name": "Ball Ornament, Christmas Scene",
@@ -197,8 +246,11 @@
             "Material": "crystal", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5533942_png/ball-ornament--christmas-scene-swarovski-5533942.png"
-          },
+
+        },
+
           {
+
             "id": 18,
             "category": "Decorations",
             "name": "Star Wars - Mandalorian, The Child",
@@ -208,8 +260,11 @@
             "Material": "crystal", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5583201_png/star-wars---mandalorian--the-child-swarovski-5583201.png"
-          },
+
+        },
+
           {
+
             "id": 19,
             "category": "Decorations",
             "name": "DC Comics Superman Logo Magnet",
@@ -219,8 +274,11 @@
             "Material": "crystal", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5557488_png/dc-comics-superman-logo-magnet-swarovski-5557488.png"
-          },
+
+        },
+
           {
+
             "id": 20,
             "category": "Decorations",
             "name": "Chinese Zodiac - Dragon",
@@ -230,8 +288,11 @@
             "Material": "crystal", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5301557_png/chinese-zodiac---dragon-swarovski-5301557.png"
-          },
+
+        },
+
           {
+
             "id": 21,
             "category": "Decorations",
             "name": "Chinese Zodiac - Dragon",
@@ -241,8 +302,11 @@
             "Material": "crystal", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5538626_png/poinsettia-swarovski-5538626.png"
-          },
+
+        },
+
           {
+
             "id": 22,
             "category": "Gift",
             "name": "Twist Wrap Ring",
@@ -252,8 +316,11 @@
             "Material": "Rose-gold tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5564872_png/twist-wrap-ring--purple--rose-gold-tone-plated-swarovski-5564872.png"
-          },
+
+        },
+
           {
+
             "id": 23,
             "category": "Gift",
             "name": "Vittore Pear Ring",
@@ -263,8 +330,11 @@
             "Material": "Rose-gold tone plated", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5585425_png/vittore-pear-ring--white--rose-gold-tone-plated-swarovski-5585425.png"
-          },
+
+        },
+
           {
+
             "id": 24,
             "category": "Gift",
             "name": "Octea Lux Chrono Watch",
@@ -274,8 +344,11 @@
             "Material": "Stainless steel", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5580600_png/octea-lux-chrono-watch--leather-strap--blue--stainless-steel-swarovski-5580600.png"
-          },
+
+        },
+
           {
+
             "id": 25,
             "category": "Gift",
             "name": "Batmobile",
@@ -285,8 +358,11 @@
             "Material": "Crystals", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5492733_png/batmobile-swarovski-5492733.png"
-          },
+
+        },
+
           {
+
             "id": 26,
             "category": "Gift",
             "name": "Star Wars - Darth Vader",
@@ -296,9 +372,13 @@
             "Material": "Crystals", 
             "Made in": "Switzerland",
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5379499_png/star-wars---darth-vader-swarovski-5379499.png"
-          }
-    ],
-    "users": [
-        {}
-    ]
-}
+
+        
+        ],
+        "admin": {
+            "email": "akylaj.anarbekova@gmail.com",
+            "password": "310701"
+        }
+        
+    }
+

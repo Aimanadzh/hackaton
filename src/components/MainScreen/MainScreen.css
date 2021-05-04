@@ -24,27 +24,18 @@
 .text {
     color: white;
     margin-left: 30px;
+    line-height: 1.5;
+}
+.text__title1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.text__title2{
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+.text__btn{
+    padding: 10px 100px;
+    font-size: 20px;
 }
 
-.text-decor {
-    text-align: center;
-    width: 100%;
-}
-
-.buttons {
-    display: flex;
-    margin-top: 3rem;
-    
-}
-
-.more_btn {
-    background-color: white;
-    color: black;
-    width: 15rem;
-    height: 2.5rem;
-}
-
-.more__btn {
-    width: 15rem;
-    
-}

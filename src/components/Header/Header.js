@@ -9,7 +9,6 @@ import { authContext} from '../../context/AuthContext';
 export default function Header() {
 
     const {isAuth} = useContext(authContext)
-
     return (
         <header className="headers">
             <div className="container">
@@ -25,8 +24,8 @@ export default function Header() {
             </div>
             <div>
                 <h1 className="headers__title">
-            <img className="navbar__logo" src={Logo} alt="logo"/>
-            </h1>
+                    <img className="navbar__logo" src={Logo} alt="logo"/>
+                </h1>
             </div>
 
         </div>
@@ -37,7 +36,7 @@ export default function Header() {
                     <span></span>
                 </label>
                 <ul className="navbar__menu menu__box">
-                <li><Link className="nav" to="" style={{textDecoration: 'none', color: 'white'}}>Jeverly</Link></li>
+                        <li><Link className="nav" to="" style={{textDecoration: 'none', color: 'white'}}>Jeverly</Link></li>
                         <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Watches</Link></li>
                         <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Accessories</Link></li>
                         <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Decoration</Link></li>
@@ -50,4 +49,4 @@ export default function Header() {
         </header>
 );
 
-}
+

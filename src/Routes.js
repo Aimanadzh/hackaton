@@ -16,8 +16,8 @@ import AuthContextProvider from './context/AuthContext';
 import ProductsContextProvider from './context/ProductsContext';
 import PrivateRoute from './components/PrivateRoute';
 
-const Routes = () => {
 
+const Routes = () => {
   return (
     <AuthContextProvider>
       <ProductsContextProvider>
