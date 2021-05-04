@@ -6,6 +6,7 @@ import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import AuthContextProvider from '../src/context/AuthContext'
 import Gif from './assets/video/gif.mp4'
+import Carousel from './components/Carousel/Carousel'
 
 import React from 'react';
 
@@ -20,6 +21,7 @@ const Routes = () => {
                     <Route exact path="/signup" component={SignUp}/>
               <MainScreen />
               <Gif />
+              <Carousel />
             </Switch>
          <Footer/>
       </BrowserRouter>
