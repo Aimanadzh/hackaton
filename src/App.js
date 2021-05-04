@@ -1,10 +1,17 @@
 import React from 'react';
+import AuthContextProvider from './context/AuthContext';
 import  Routes  from './Routes';
 
 const App = () => {
+
+  
+
   return (
     <div>
-      <Routes/>
+      <AuthContextProvider>
+        <Routes/>
+      </AuthContextProvider>
+      
     </div>
   );
 };
