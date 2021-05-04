@@ -37,7 +37,7 @@ export default function Header() {
                     <span></span>
                 </label>
                 <ul className="navbar__menu menu__box">
-                <li><Link className="nav" to="" style={{textDecoration: 'none', color: 'white'}}>Jeverly</Link></li>
+                        <li><Link className="nav" to="" style={{textDecoration: 'none', color: 'white'}}>Jeverly</Link></li>
                         <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Watches</Link></li>
                         <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Accessories</Link></li>
                         <li><Link className="nav" style={{textDecoration: 'none', color: 'white'}}>Decoration</Link></li>

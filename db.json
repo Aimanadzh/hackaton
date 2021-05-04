@@ -298,7 +298,8 @@
             "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5379499_png/star-wars---darth-vader-swarovski-5379499.png"
           }
     ],
-    "users": [
-        {}
-    ]
+    "admin": {
+      "email": "akylaj.anarbekova@gmail.com",
+      "password": "310701"
+    }
 }
