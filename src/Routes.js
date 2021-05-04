@@ -17,6 +17,7 @@ import ProductsContextProvider from './context/ProductsContext';
 import PrivateRoute from './components/PrivateRoute';
 
 const Routes = () => {
+
   return (
     <AuthContextProvider>
       <ProductsContextProvider>
@@ -41,6 +42,7 @@ const Routes = () => {
       </ProductsContextProvider>
     </AuthContextProvider>
   );
+
 };
 
 export default Routes;
