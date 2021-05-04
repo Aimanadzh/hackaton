@@ -5,6 +5,7 @@ import Header from "./components/Header/Header"
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import AuthContextProvider from '../src/context/AuthContext'
+
 import React from 'react';
 
 
@@ -15,14 +16,14 @@ const Routes = () => {
       <BrowserRouter>
          <Header />
             <Switch>
-                    <Route exact path="/login" component={SignIn}/>
-                    <Route exact path="/signup" component={SignUp}/>
-                   
-              <MainScreen />
+               <Route exact path="/login" component={SignIn}/>
+               <Route exact path="/signup" component={SignUp}/>
+
+               <MainScreen />
             </Switch>
          <Footer/>
       </BrowserRouter>
-       </AuthContextProvider>
+      </AuthContextProvider>
    );
 
 };

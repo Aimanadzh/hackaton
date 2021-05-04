@@ -1,7 +1,309 @@
 {
     "products": [
         {
-            
+            "id": 0,
+            "category": "Watches",
+            "name": "Crystal Lake Watch",
+            "description": "Inspired by the beauty of crystal, Swarovski have created a one-of-a-kind watch that truly epitomizes our artistry and quality. The Crystal Lake timepiece features a stunning dial crafted from a single piece of sparkling sapphire crystal. Unique and beautiful, the dark gray dial takes center stage in the design, bound with a minimalistic rose gold-plated round case and an uncomplicated black leather strap. Elegant, feminine, and modern, it will stamp your look with fresh and luxurious appeal. Specifications: Case - 35 mm; Water resistant up to 50 m; K1 Mineral Glass; Swiss made.",
+            "price": 10000,
+            "Color": "Black",
+            "Material": "Rose-gold tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_auto,f_auto,w_auto/5480507_png/crystalline-oval-watch--metal-bracelet--black--rose-gold-tone-pvd-swarovski-5480507.png"
+        },
+        {
+            "id": 1,
+            "category": "Watches",
+            "name": "Crystalline Oval Watch",
+            "description": "Add glamorous Swarovski sparkle to your wrist with this chic and innovative timepiece. The white leather strap, white silver-tone sunray dial, and rose gold-plated metal combine perfectly with the sleekly-designed case, which is embellished with over 1’700 crystals. Specifications: Case - 37 mm; Water resistant up to 30 m; Swiss made. A feminine accessory to wear alone or to stack with other Swarovski pieces for on-trend layering.",
+            "price": 11000,
+            "Color": "White",
+            "Material": "Rose-gold tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5230946_png/crystalline-oval-watch--leather-strap--white--rose-gold-tone-pvd-swarovski-5230946.png"
+        },
+        {
+            "id": 2,
+            "category": "Watches",
+            "name": "Crystalline Oval Watch",
+            "description": "Displaying a striking combination of feminine rose gold and on-trend blue, this sleek and contemporary Octea Lux watch blends modern luxury with feminine sophistication. Its rose gold-tone stainless steel case elegantly offsets the dark indigo crystal bezel, blue sunray dial with applied rose gold-tone coated index markers, and blue genuine leather strap with embossed crocodile structure. Specifications: Case - 39 mm; water resistant to 50 m; Swiss Made.",
+            "price": 12000,
+            "Color": "Blue",
+            "Material": "Leather", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5414413_png/octea-lux-watch--leather-strap--blue--rose-gold-tone-pvd-swarovski-5414413.png"
+        },
+        {
+            "id": 3,
+            "category": "Watches",
+            "name": "Crystal Flower Watch",
+            "description": "This Swarovski watch displays a brilliant integration of natural forms and modern design. Inspired by flowers, the bezel features two intertwined rows of bright crystals on rose-gold tone PVD coating. Nestled among these sparkling lines sits a ruby-tone colored sunray dial adorned with crystal index markers and the Swarovski logo at 12 o'clock. A ruby, genuine leather strap adds the finishing touch to this Swiss Made watch. Dress up your style with this floral timepiece to add extraordinary romance to your every day.",
+            "price": 13000,
+            "Color": "Red",
+            "Material": "Leather", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5552780_png/crystal-flower-watch--leather-strap--red--rose-gold-tone-pvd-swarovski-5552780.png"
+        },
+        {
+            "id": 4,
+            "category": "Watches",
+            "name": "Octea Lux Chrono Watch",
+            "description": "This Swarovski watch displays a brilliant integration of natural forms and modern design. Inspired by flowers, the bezel features two intertwined rows of bright crystals on rose-gold tone PVD coating. Nestled among these sparkling lines sits a ruby-tone colored sunray dial adorned with crystal index markers and the Swarovski logo at 12 o'clock. A ruby, genuine leather strap adds the finishing touch to this Swiss Made watch. Dress up your style with this floral timepiece to add extraordinary romance to your every day.",
+            "price": 14000,
+            "Color": "Green",
+            "Material": "Leather", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5452498_png/octea-lux-chrono-watch--leather-strap--green--rose-gold-tone-pvd-swarovski-5452498.png"
+        },
+        {
+            "id": 5,
+            "category": "Jewerly",
+            "name": "Angelic Rectangular Necklace",
+            "description": "This beautiful Swarovski necklace is a timeless classic. It features a single green, rectangular stone which adorns a shimmering chain and is surrounded by sparkling pavé. Its simple yet elegant design makes it a great choice to dress up everyday looks. Combine it with matching pieces of jewelry for a sparkling ensemble. A beautiful gift for someone close to you.",
+            "price": 15000,
+            "Color": "Green",
+            "Material": "Rhodium plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5559380_png/angelic-rectangular-necklace--green--rhodium-plated-swarovski-5559380.png"
+        },
+        {
+            "id": 6,
+            "category": "Jewerly",
+            "name": "Tigris Cuff",
+            "description": "This glamorous cuff joins our Tigris collection by Atelier Swarovski, which has been refreshed and reimagined for the new season. Inspired by the river Tigris, its design emulates water droplets and the movement of water. The flowing, organic silhouette blends glittering crystal Pointiage® with large clear crystals, creating a classic look with a contemporary twist. Wear it with a simple shift dress for effortless day-to-evening elegance, or play with contrasts and pair it with a sharp suit.",
+            "price": 16000,
+            "Color": "Gray",
+            "Material": "Rhodium plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5569069_png/tigris-cuff--white--gold-tone-plated-swarovski-5569069.png"
+        },
+        {
+            "id": 7,
+            "category": "Jewerly",
+            "name": "Beautiful Earth by Susan Rockefeller Necklace",
+            "description": "Conservationist and jewelry designer Susan Rockefeller has drawn inspiration from the planet’s natural beauty for her new collaboration with Atelier Swarovski. Focusing on the panda and its favorite food, bamboo, the new collection seeks to remind us of the earth’s abundance and fragility, urging us to protect it for future generations. This statement bib necklace sparkles with an abundant array of vibrant green crystals in different shapes on a gold-tone plated chain. Perfect for glamorous nights out, this gorgeous design has a luxurious style. Matching items are available.",
+            "price": 17000,
+            "Color": "Green",
+            "Material": "Gold-tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5535897_png/beautiful-earth-by-susan-rockefeller-necklace--bib--dark-multi-colored--gold-tone-plated-swarovski-5535897.png"
+        },
+        {
+            "id": 8,
+            "category": "Jewerly",
+            "name": "Curiosa stud earring",
+            "description": "Bring a sense of magic to your wardrobe with this single stud earring. It’s spherical form is intricately designed, with bichromatic technology giving the blue triangle princess cut stones a kaleidoscopic effect. Complete with clear stone embellishments and set in a gold-tone plated frame, style it as a rhodium plated piece, or mix with other earrings from the Curiosa family to define your own version of modern chic. This piece is a single earring; it is sold as one unit and does not come as a pair. This earring is part of the Curiosa family, designed by Creative Director Giovanna Engelbert for Collection I.",
+            "price": 18000,
+            "Color": "Blue",
+            "Material": "Swarovski crystals, Gold-tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5606952_png/curiosa-stud-earring--single--round--blue--gold-tone-plated-swarovski-5606952.png"
+        },
+        {
+            "id": 9,
+            "category": "Jewerly",
+            "name": "Beautiful Earth by Susan Rockefeller Ring Set",
+            "description": "Conservationist and jewelry designer Susan Rockefeller has drawn inspiration from the planet’s natural beauty for her new collaboration with Atelier Swarovski. Focusing on the panda and its favorite food, bamboo, the new collection seeks to remind us of the earth’s abundance and fragility, urging us to protect it for future generations. This statement gold-tone plated design is a spectacular showcase of crystal brilliance for any outfit. The set of six rings sparkle with a multitude of different crystals in an array of cuts and colors, creating a truly mesmerizing effect. Wear them all together on one finger for a modern stacked look, or wear them alone for pared-back styling. Matching items are available. ",
+            "price": 19000,
+            "Color": "Dark multi-colored",
+            "Material": "Gold-tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5535895_png/beautiful-earth-by-susan-rockefeller-ring-set-%286%29--dark-multi-colored--gold-tone-plated-swarovski-5535895.png"
+        },
+        {
+            "id": 10,
+            "category": "Jewerly",
+            "name": "Swarovski Sparkling Dance Round Necklace",
+            "description": "Featuring a round dark red stone inside a pavé-embellished 3D cage, this sophisticated rose gold-plated necklace is inspired by the idea of a ‘dancing crystal’. An essential addition to any jewelry box, it will give your daytime style a playful sparkle.",
+            "price": 20000,
+            "Color": "White",
+            "Material": "Rose-gold tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5279421_png/swarovski-sparkling-dance-round-necklace--red--rose-gold-tone-plated-swarovski-5279421.png"
+        },
+        {
+            "id": 11,
+            "category": "Accessories",
+            "name": "Crystalline Celebration 2021 Ballpoint Pen",
+            "description": "Celebrate 2021 in style with this Crystalline ballpoint pen by Swarovski. Its barrel is filled with hundreds of clear crystals, adding their brilliant sparkle to the beautiful white and rose-gold tone design. The top of the pen features the year '2021' to mark the occasion. A lifelong bow charm in crystal pavé attaches to the pen for a uniquely charming touch. The charm is removable and can be worn separately with other accessories or pieces of jewelry. A splendid gift for any special occasion.",
+            "price": 21000,
+            "Color": "White",
+            "Material": "Metal", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5553339_png/crystalline-celebration-2021-ballpoint-pen--white--rose-gold-tone-plated-swarovski-5553339.png"
+        },
+        {
+            "id": 12,
+            "category": "Accessories",
+            "name": "High Smartphone Case with Bumper",
+            "description": "If you view your phone as part of your look, this Swarovski phone case is perfect for you. It is fully crystallized with numerous gold-tone colored Swarovski crystals that gleam and sparkle whenever you take it out of your purse. Invisible bumpers inside the case add an extra layer of protection for your phone. This case is compatible with official Apple chargers and the iPhone® 2019. iPhone® is a trademark of Apple Inc. ",
+            "price": 22000,
+            "Color": "Gold tone",
+            "Material": "TPU (thermoplastic polyurethane), Stainless steel", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5533961_png/high-smartphone-case-with-bumper--iphone%C2%AE-11-pro--gold-tone-swarovski-5533961.png"
+        },
+        {
+            "id": 13,
+            "category": "Accessories",
+            "name": "Swarovski Sunglasses",
+            "description": "Upgrade your summer outfits in an instant with this glamorous pair of rimless, oversized Swarovski sunglasses. Their bold and feminine design combines rose-gold tone plated metal temples with gradient smoke/peach lenses. Two v-shaped elements, which are embellished with shimmering beige crystals, add a modern twist. Light and easy-to-wear, these sunglasses pair perfectly with Swarovski jewelry and accessories. ",
+            "price": 23000,
+            "Color": "Rose-gold tone",
+            "Material": "Rose-gold tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5600905_png/swarovski-sunglasses--sk0306-h-28b--rose-gold-tone-swarovski-5600905.png"
+        },
+        {
+            "id": 14,
+            "category": "Accessories",
+            "name": "Glam Rock Ring Sticker",
+            "description": "Enjoy an effortlessly stylish look with this new ring sticker. Full of sparkle, the circular design dazzles with black Crystal Rocks for unmistakable Swarovski shine. The swivel grip allows 360-degree rotation and 180-degree movement for vertical or horizontal kickstand capability. Very functional and glamorous, you’ll wonder how you lived without one. Note: as the ring sticker does not adhere to the smartphone finish properly, we highly suggest attaching the ring sticker to the back of a plain, untextured phone case instead. The ring sticker is not reusable once removed, and its usage is for smartphones only and not tablets or other devices. ",
+            "price": 24100,
+            "Color": "Black",
+            "Material": "Rose-gold tone plated, Stainless steel", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5457469_png/glam-rock-ring-sticker--black--mixed-plating-swarovski-5457469.png"
+        },
+        {
+            "id": 15,
+            "category": "Accessories",
+            "name": "Minnie Smartphone case",
+            "description": "A must-have for every Disney enthusiast: This phone case by Swarovski is the ideal accessory for fans of Minnie Mouse. Minnie's silhouette is accentuated by sparkling crystals and soft ears, while her sparkling red bow lends a feminine touch to the design. The case features invisible bumpers for additional protection. An excellent gift for everyone who loves Disney's iconic characters. This case is compatible with official wireless chargers from Apple® and the iPhone® 12 Pro Max. iPhone® is a trademark of Apple Inc. Apple® is a trademark of Apple Inc. ",
+            "price": 25100,
+            "Color": "Dark multi-colored",
+            "Material": "Acrylonitrile butadiene styrene (thermoplastic polyurethane Phone model: iPhone® 12 Pro Max", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5565207_png/minnie-smartphone-case--iphone%C2%AE-12-pro-max--multicolored-swarovski-5565207.png"
+        },
+        {
+            "id": 16,
+            "category": "Accessories",
+            "name": "Zodiac Cow Bag Charm",
+            "description": "This bag charm by Swarovski is perfect for celebrating the year of the Ox. It depicts a cute interpretation of an ox as a female superhero. Sparkling purple, black, and clear crystals accentuate the design and lend it a feminine air. The brilliant crystallization makes it a great choice to accessorize a keyring or use it as a striking bag charm. Matching both casual and special occasions, it makes for a charming gift to a special person in your life.",
+            "price": 26200,
+            "Color": "purpul",
+            "Material": "Rose-gold tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5552795_png/zodiac-cow-bag-charm--purple--rose-gold-tone-plated-swarovski-5552795.png"
+        },
+        {
+            "id": 17,
+            "category": "Decorations",
+            "name": "Ball Ornament, Christmas Scene",
+            "description": "This Swarovski ball ornament has captured childhood memories in loving detail. Inside a hand-crafted, mouth-blown open glass ball, a sparkling crystal teddy bear sits next to a festive tree, with the scene featuring crystals in traditional green and red. The sparkle of the 621 crystal facets is further enhanced by the white ribbon and the delicate white snowflakes printed on the outside of the ball, perfecting the festive scene in a winter wonderland. A charming ornament that will add an emotional touch to your range of decorations, and a perfect gift. Decoration object. Not a toy. Not suitable for children under 15.",
+            "price": 27000,
+            "Color": "Dark multi-colored",
+            "Material": "crystal", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5533942_png/ball-ornament--christmas-scene-swarovski-5533942.png"
+        },
+        {
+            "id": 18,
+            "category": "Decorations",
+            "name": "Star Wars - Mandalorian, The Child",
+            "description": "This Star Wars character by Swarovski has enchanted Star Wars fans around the world. Originating from the Star Wars Disney+ original television series 'The Mandalorian', The Child accompanies the eponymous bounty hunter on his adventures through the galaxy. Faithfully recreated in 251 expertly cut facets of sparkling green and gold tone crystal, The Child is a brilliant addition to your Star Wars collection. This figurine is a must-have for serious collectors and enthusiasts alike. Decoration object. Not a toy. Not suitable for children under 15.",
+            "price": 28000,
+            "Color": "Green",
+            "Material": "crystal", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5583201_png/star-wars---mandalorian--the-child-swarovski-5583201.png"
+        },
+        {
+            "id": 19,
+            "category": "Decorations",
+            "name": "DC Comics Superman Logo Magnet",
+            "description": "This innovative new magnet design showcases Superman’s iconic ‘S-Shield’ in red and yellow print on a speech balloon of bright blue crystal. Featuring 68 sparkling facets, this double-sided magnet can be used for decoration on a metallic surface or as a playful brooch. A heroic gift idea for fans of the DC Universe. Decoration object. Not a toy. Not suitable for children under 15.",
+            "price": 20300,
+            "Color": "Light multi-colored",
+            "Material": "crystal", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5557488_png/dc-comics-superman-logo-magnet-swarovski-5557488.png"
+        },
+        {
+            "id": 20,
+            "category": "Decorations",
+            "name": "Chinese Zodiac - Dragon",
+            "description": "Celebrate the Chinese New Year or a birthday with this Chinese Zodiac Dragon. Representing power and honor, it is crafted in golden crystal, an auspicious color. Designed in collaboration with artists from the Central Academy of Fine Arts in Beijing, the piece boasts 370 glittering facets. The curved clear crystal base is inspired by the shape of the Huang Jade fans seen in Chinese art and features the Swarovski logo and the Chinese character for ‘dragon’. All 12 signs can be placed together to form a circle symbolizing the endless cycle of life and evoking the Jade Bi artefact used in ancient rituals. Chinese Zodiac leaflet included. Decoration object. Not a toy. Not suitable for children under 15.",
+            "price": 24300,
+            "Color": "Gold tone",
+            "Material": "crystal", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5301557_png/chinese-zodiac---dragon-swarovski-5301557.png"
+        },
+        {
+            "id": 21,
+            "category": "Decorations",
+            "name": "Chinese Zodiac - Dragon",
+            "description": "This sparkling Swarovski design is inspired by the famous poinsettia flowers, a much beloved symbol of peace and renewal. Their purity is captured in 560 facets of green, red, yellow and clear crystal, timelessly fashioned in the motif of the flowers in bloom. An unfading and charming addition to any festive decoration, these flowers bring the unique glow of their iconic five-blooms to a home all year long. Decoration object. Not a toy. Not suitable for children under 15.",
+            "price": 25300,
+            "Color": "Red",
+            "Material": "crystal", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5538626_png/poinsettia-swarovski-5538626.png"
+        },
+        {
+            "id": 22,
+            "category": "Gift",
+            "name": "Twist Wrap Ring",
+            "description": "TIntricate and opulent, this marvelous Swarovski ring reinterprets the spiral trend magnificently. Gently curving lines of purple stones of various sizes in round, square, and tapered baguette-shapes sparkle brilliantly in many facets. Complemented by a shimmering finish, the elegant design makes it perfect for dressing up your style, adding a radiant touch of glamor to your look.",
+            "price": 26300,
+            "Color": "Purple",
+            "Material": "Rose-gold tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5564872_png/twist-wrap-ring--purple--rose-gold-tone-plated-swarovski-5564872.png"
+        },
+        {
+            "id": 23,
+            "category": "Gift",
+            "name": "Vittore Pear Ring",
+            "description": "This ring by Swarovski showcases the sparkling beauty of gleaming, faceted stones. White, drop-shaped elements arrayed in a single row beautifully reflect and refract incoming light. Its puristic, elegant forms make this ring perfect for combination with other pieces of jewelry and trendy stacking looks with matching rings. An excellent choice to enhance an outfit for special occasions, and a truly inspired gift giving idea.",
+            "price": 27300,
+            "Color": "White",
+            "Material": "Rose-gold tone plated", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5585425_png/vittore-pear-ring--white--rose-gold-tone-plated-swarovski-5585425.png"
+        },
+        {
+            "id": 24,
+            "category": "Gift",
+            "name": "Octea Lux Chrono Watch",
+            "description": "The Octea Lux Chrono is a landmark design in watchmaking and crystal craftsmanship, and this on-trend colorway sparkles with brilliant intensity. The stainless steel case provides a sporty backdrop to Swarovski’s exclusive crystal bezel, which gleams in dazzling denim blue. A matching dial and crocodile-embossed genuine leather strap complete the cohesive look. Featuring three dial counters and the Swarovski swan at 12 o'clock, this modern chronograph matches luxury with precision. Made in Switzerland, it is water resistant to 50m.",
+            "price": 27400,
+            "Color": "Blue",
+            "Material": "Stainless steel", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5580600_png/octea-lux-chrono-watch--leather-strap--blue--stainless-steel-swarovski-5580600.png"
+        },
+        {
+            "id": 25,
+            "category": "Gift",
+            "name": "Batmobile",
+            "description": "This detailed Swarovski figurine shows the legendary Batmobile. In this car, the Dark Knight roams the streets of Gotham City, defending the city and its inhabitants. Crafted from jet black Swarovski crystals with 473 facets, this figurine is a must-have item for any passionate collector and a great gift giving idea for DC fans. Decoration object. Not a toy. Not suitable for children under 15.",
+            "price": 27500,
+            "Color": "Black",
+            "Material": "Crystals", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5492733_png/batmobile-swarovski-5492733.png"
+        },
+        {
+            "id": 26,
+            "category": "Gift",
+            "name": "Star Wars - Darth Vader",
+            "description": "The Star Wars galaxy meets sparkling Swarovski crystal. Darth Vader, one of the most iconic villains in popular culture, is expertly crafted in black crystal with 551 facets. His outfit features printed details in various colors and he holds the iconic lightsaber, made of metal with black and red varnish. Decoration object. Not a toy. Not suitable for children under 15.",
+            "price": 28700,
+            "Color": "Black",
+            "Material": "Crystals", 
+            "Made in": "Switzerland",
+            "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5379499_png/star-wars---darth-vader-swarovski-5379499.png"
         }
-    ]
-}
+        
+        ],
+        "admin": {
+            "email": "akylaj.anarbekova@gmail.com",
+            "password": "310701"
+        }
+        
+
+ 
+    }

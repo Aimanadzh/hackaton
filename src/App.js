@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import  Routes  from './Routes';
 
 const App = () => {
+
   return (
     <div>
       <Routes/>
@@ -10,3 +11,5 @@ const App = () => {
 };
 
 export default App;
+
+
