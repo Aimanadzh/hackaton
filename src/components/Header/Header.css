@@ -1,6 +1,12 @@
 *{
    text-decoration: none;
 }
+<<<<<<< HEAD
+.header{
+   margin: -8px;
+}
+=======
+>>>>>>> 49e699a7dc318aeeb37a386aa4daa8414d0290d5
 .header:hover{
    background-color: #F0EEE4;
 }

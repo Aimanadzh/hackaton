@@ -19,6 +19,10 @@ import Jewerly from './components/Jewerly/Jewerly';
 import Watches from './components/Watches/Watches';
 import Details from './components/Details/Details';
 import Footer from './components/Footer/Footer';
+import Accessories from './components/Accessories/Accessories';
+import Decoration from './components/Decoration/Decoration';
+import Gift from './components/Gift/Gift';
+
 
 
 const Routes = () => {
@@ -34,7 +38,7 @@ const Routes = () => {
             <Route exact path = "/payment" component={PaymentForm} />
             <Route exact path = "/addproduct" component={AddProduct} />
             <Route exact path = "/market" component={ProductListAdmin} />
-            <Route exact path="/details" component={Details} />
+            {/* <Route exact path="/details" component={Details} /> */}
             <Route exact path="/login" component={Login} />
             <Route exact path="/edit/:id" component={EditModal} />
             <Route exact path="/modal" component={Modal} />
@@ -42,6 +46,9 @@ const Routes = () => {
             <Route exact path="/cart" component={Cart} />
             <Route exact path="/jewerly" component={Jewerly} />
             <Route exact path="/watches" component={Watches} />
+            <Route exact path="/accessories" component={Accessories} />
+            <Route exact path="/decoration" component={Decoration} />
+            <Route exact path="/gift" component={Gift} />
           </Switch>
           <Footer/>
         </BrowserRouter>
