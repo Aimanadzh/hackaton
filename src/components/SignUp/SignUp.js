@@ -15,7 +15,7 @@ const SignUp = ({ history }) => {
                     );
 
 
-                history.push("/");
+                history.push("/login");
 
             } catch (error) {
                 alert(error);
