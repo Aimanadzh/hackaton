@@ -1,46 +1,40 @@
 *{
    text-decoration: none;
 }
-.headers{
+.header{
    margin: -8px;
 }
-.headers:hover{
+.header:hover{
    background-color: #F0EEE4;
 }
 
 .container{
    max-width: 1200px;
 }
-.header__regist{
+.navbar__regisrt{
    text-align: right;
    cursor: pointer;
-   color: white;
+   color: black;
    padding-bottom: 20px;
    padding-top: 10px;
+
 }
-.regist__search{
-   width: 15px;
-   height: 15px;
-   text-align: center;
-   margin-right: 50px;
-}
-.regist__in{
+
+.login{
    margin-left: 10px;
    margin-right: 10px;
+   border-radius: 10px;
 }
-.regist__up{
+.signup{
    cursor: pointer;
    border-radius: 10px;
-   padding: 5px;
-   color: white;
+   padding: 10px 20px;
+   
 }
 .navbar__logo{
-   height: 170px;
+   height: 190px;
    padding-left: 30px;
 }
-/*.navbar__logo:hover{
-   
-}*/
 .headers__title{
    margin: 0;
    cursor: pointer;
@@ -60,6 +54,7 @@
    list-style-type: none;
    width: 960px;
    padding-left: 0;
+   padding-bottom: 10px;
 }
 .hamburger-menu{
    display: flex;
