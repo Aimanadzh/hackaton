@@ -13,7 +13,7 @@ const Gifka = () => {
             className="gifka"
             mp4={gifka}
             objectFit={"cover"}
-            style={{height: "400px"}}
+            style={{height: "450px"}}
             />
             </div>
       </div>

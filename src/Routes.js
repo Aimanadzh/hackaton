@@ -15,11 +15,14 @@ import AuthContextProvider from './context/AuthContext';
 import ProductsContextProvider from './context/ProductsContext';
 import PrivateRoute from './components/PrivateRoute';
 import EditModal from './components/EditModal/Modal';
-import Jeverly from './components/Jeverly/Jeverly';
+import Jewerly from './components/Jewerly/Jewerly';
 import Watches from './components/Watches/Watches';
+import Details from './components/Details/Details';
+import Footer from './components/Footer/Footer';
 import Accessories from './components/Accessories/Accessories';
 import Decoration from './components/Decoration/Decoration';
 import Gift from './components/Gift/Gift';
+
 
 
 const Routes = () => {
@@ -41,12 +44,13 @@ const Routes = () => {
             <Route exact path="/modal" component={Modal} />
             <Route exact path="/shop" component={ProductsListUser} />
             <Route exact path="/cart" component={Cart} />
-            <Route exact path="/jeverly" component={Jeverly} />
+            <Route exact path="/jewerly" component={Jewerly} />
             <Route exact path="/watches" component={Watches} />
             <Route exact path="/accessories" component={Accessories} />
             <Route exact path="/decoration" component={Decoration} />
             <Route exact path="/gift" component={Gift} />
           </Switch>
+          <Footer/>
         </BrowserRouter>
       </ProductsContextProvider>
     </AuthContextProvider>

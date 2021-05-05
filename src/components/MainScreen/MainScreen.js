@@ -26,9 +26,9 @@ const MainScreen = () => {
                 <button className="shop">Shop</button>
             </Link>    
         </div>
+
         </>
     );
 };
-    
 
 export default MainScreen;

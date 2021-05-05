@@ -45,7 +45,7 @@ const Header = () => {
                   <span></span>
                 </label>
                   <ul className="navbar__menu menu__box">
-                    <li><Link className="nav" to="/jeverly" style={{textDecoration: 'none', color: 'black'}}>Jeverly</Link></li>
+                    <li><Link className="nav" to="/jewerly" style={{textDecoration: 'none', color: 'black'}}>Jewerly</Link></li>
                     <li><Link className="nav" to="/watches" style={{textDecoration: 'none', color: 'black'}}>Watches</Link></li>
                     <li><Link className="nav" to="/accessories" style={{textDecoration: 'none', color: 'black'}}>Accessories</Link></li>
                     <li><Link className="nav" to="/decoration" style={{textDecoration: 'none', color: 'black'}}>Decoration</Link></li>

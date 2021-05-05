@@ -1,9 +1,12 @@
 *{
    text-decoration: none;
 }
+<<<<<<< HEAD
 .header{
    margin: -8px;
 }
+=======
+>>>>>>> 49e699a7dc318aeeb37a386aa4daa8414d0290d5
 .header:hover{
    background-color: #F0EEE4;
 }
@@ -89,7 +92,7 @@
    position: absolute;
    width: 100%;
    height: 2px;
-   background-color: white;
+   background-color: black;
 }
 .menu__btn > span::before{
    content: '';
@@ -114,4 +117,58 @@
 #menu__toggle:checked ~ .menu__box{
    visibility: visible;
    right: 0;
+}
+
+
+@media all and (max-width: 1200px) {
+   .container {
+      max-width: 960px;
+   }
+}
+
+@media all and (max-width: 992px) {
+   .container {
+      max-width: 752px;
+   }
+}
+@media all and (max-width: 768px) {
+   .menu__btn {
+      visibility: visible;
+   }
+   .menu__box {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      right: -100%;
+      width: 300px;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      text-align: center;
+      background-color: slategray;
+      z-index: 1;
+      overflow-x: hidden;
+   }
+   .navbar__item {
+      display: block;
+      padding: 12px 24px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+   }
+   .navbar__item:hover {
+      background-color: snow;
+   }
+}
+
+@media all and (max-width: 768px) {
+   .container {
+      max-width: 528px;
+   }
+}
+@media all and (max-width: 576px) {
+   .container {
+      max-width: 306px;
+   }
 }
