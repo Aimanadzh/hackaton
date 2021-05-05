@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Button from "@material-ui/core/Button";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
-// import { Link } from "react-router-dom";
 import ShopIcon from "@material-ui/icons/Shop";
 const useStyles = makeStyles((theme) => ({
   root: {
