@@ -69,6 +69,7 @@ const Login = ({ history }) => {
         return;
       }
       try {
+        alert('1')
         await app
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);

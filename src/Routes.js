@@ -4,10 +4,10 @@ import Header from './components/Header/Header';
 import Admin from './components/Admin/Admin';
 import SignUp from './components/SignUp/SignUp';
 import Home from './components/Home/Home';
+// import PaymentForm from './components/PaymentForm/PaymentForm';
 import AddProduct from './components/AddProduct/AddProduct';
-import ProductListAdmin from './components/ProductListAdmin/ProductListAdmin';
+import ProductListAdmin from './components/ProductListAdmin/ProductsListAdmin';
 import Login from './components/LogIn/LogIn';
-import EditModal from './components/EditModal/Edit';
 import Modal from './components/EditModal/Modal';
 import ProductsListUser from './components/ProductListUser/ProductListUser';
 import Cart from './components/Cart/Cart';
@@ -16,6 +16,16 @@ import ProductsContextProvider from './context/ProductsContext';
 import PrivateRoute from './components/PrivateRoute';
 import Details from './components/Details/Details';
 import Checkout from './components/OrderForm/Checkout';
+import EditModal from './components/EditModal/Modal';
+import Jewerly from './components/Jewerly/Jewerly';
+import Watches from './components/Watches/Watches';
+import Details from './components/Details/Details';
+import Footer from './components/Footer/Footer';
+import Accessories from './components/Accessories/Accessories';
+import Decoration from './components/Decoration/Decoration';
+import Gift from './components/Gift/Gift';
+
+
 
 const Routes = () => {
   return (
@@ -37,7 +47,13 @@ const Routes = () => {
             <Route exact path="/modal" component={Modal} />
             <Route exact path="/shop" component={ProductsListUser} />
             <Route exact path="/cart" component={Cart} />
+            <Route exact path="/jewerly" component={Jewerly} />
+            <Route exact path="/watches" component={Watches} />
+            <Route exact path="/accessories" component={Accessories} />
+            <Route exact path="/decoration" component={Decoration} />
+            <Route exact path="/gift" component={Gift} />
           </Switch>
+          <Footer/>
         </BrowserRouter>
       </ProductsContextProvider>
     </AuthContextProvider>

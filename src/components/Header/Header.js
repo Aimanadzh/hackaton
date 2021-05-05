@@ -46,11 +46,11 @@ export default function Header () {
                   <span></span>
                 </label>
                   <ul className="navbar__menu menu__box">
-                    <li><Link className="nav" to="" style={{textDecoration: 'none', color: 'black'}}>Jeverly</Link></li>
-                    <li><Link className="nav" style={{textDecoration: 'none', color: 'black'}}>Watches</Link></li>
-                    <li><Link className="nav" style={{textDecoration: 'none', color: 'black'}}>Accessories</Link></li>
-                    <li><Link className="nav" style={{textDecoration: 'none', color: 'black'}}>Decoration</Link></li>
-                    <li><Link className="nav" style={{textDecoration: 'none', color: 'black'}}>Gift</Link></li>
+                    <li><Link className="nav" to="/jewerly" style={{textDecoration: 'none', color: 'black'}}>Jewerly</Link></li>
+                    <li><Link className="nav" to="/watches" style={{textDecoration: 'none', color: 'black'}}>Watches</Link></li>
+                    <li><Link className="nav" to="/accessories" style={{textDecoration: 'none', color: 'black'}}>Accessories</Link></li>
+                    <li><Link className="nav" to="/decoration" style={{textDecoration: 'none', color: 'black'}}>Decoration</Link></li>
+                    <li><Link className="nav" to="/gift" style={{textDecoration: 'none', color: 'black'}}>Gift</Link></li>
                   </ul>
               </div>
             </div>

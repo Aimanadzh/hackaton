@@ -9,6 +9,8 @@ html, body, .grid-detail  { height: 100%; margin: 0; }
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr;
    gap: 0px 0px;
+
+
 }
 .detail-size{
    text-align: center;
@@ -41,4 +43,9 @@ html, body, .grid-detail  { height: 100%; margin: 0; }
    padding-right: 10px;
    border-bottom: 2px solid gray;
    font-size: 14px;
+<<<<<<< HEAD
 }
+=======
+   
+}
+>>>>>>> 91dc17ec5bfb62b6b6b851881667cfa5a0dc473f
