@@ -9,6 +9,7 @@ import { productsContext } from "../../context/ProductsContext";
 import Typography from "@material-ui/core/Typography";
 import Slider from "@material-ui/core/Slider";
 import Button from "@material-ui/core/Button";
+import { AuthContext } from "../../context/AuthContext";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -23,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Sidebar = ({ history }) => {
   const { getProducts } = useContext(productsContext);
+  const { isAdmin } = useContext(AuthContext);
   const handleChangeMemory = (e) => {
     if (e.target.value === "all") {
       history.push(`${history.location.pathname.replace("name")}`);
@@ -63,6 +65,8 @@ const Sidebar = ({ history }) => {
   }
   return (
     <Grid item m={3}>
+      
+      {isAdmin ? (<h1>Admin</h1>) : <h1>user</h1>} 
       <Paper>
         <input
           style={{ width: 300 }}

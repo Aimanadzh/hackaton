@@ -1,17 +1,12 @@
 import React, { useReducer } from "react";
 import axios from "axios";
-// import { JSON_API } from "../helpers/constants";
-// import { useHistory } from "react-router";
 import {
   calcSubPrice,
   calcTotalPrice,
   getCountProductsInCart,
 } from "../helpers/CalcPrice";
 
-
 export const productsContext = React.createContext();
-
-
 const INIT_STATE = {
   productsData: [],
   paginationPages: 1,
@@ -44,7 +39,7 @@ const reducer = (state = INIT_STATE, action) => {
 };
 const ProductsContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
-  // const history = useHistory();
+  const history = useHistory();
   async function getProducts(history) {
     const search = new URLSearchParams(history.location.search);
     search.set("_limit", 4);
@@ -83,7 +78,9 @@ const ProductsContextProvider = ({ children }) => {
       payload: data,
     });
   };
-  //cart
+ 
+
+
   function addProductToCart(product) {
     let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
@@ -107,8 +104,8 @@ const ProductsContextProvider = ({ children }) => {
     } else {
       cart.products.push(newProduct);
     }
-    // newProduct.subPrice = calcSubPrice(newProduct);
-    // cart.totalPrice = calcTotalPrice(cart.products);
+    newProduct.subPrice = calcSubPrice(newProduct);/////////////
+    cart.totalPrice = calcTotalPrice(cart.products);////////
     localStorage.setItem("cart", JSON.stringify(cart));
     dispatch({
       type: "CHANGE_CART_COUNT",
@@ -131,51 +128,52 @@ const ProductsContextProvider = ({ children }) => {
   function changeProductCount(count, id) {
     let cart = JSON.parse(localStorage.getItem("cart"));
     console.log(cart, " 112");
+
     cart.products = cart.products.map((elem) => {
-        if (elem.item.id === id) {
-          elem.count = count;
-          elem.subPrice = calcSubPrice(elem);
-        }
-        return elem;
-      });
-      cart.totalPrice = calcTotalPrice(cart.products);
-      localStorage.setItem("cart", JSON.stringify(cart));
-      getCart();
-    }
-    function checkProductInCart(id) {
-      let cart = JSON.parse(localStorage.getItem("cart"));
-      if (!cart) {
-        cart = {
-          products: [],
-          totalPrice: 0,
-        };
+      if (elem.item.id === id) {
+        elem.count = count;
+        elem.subPrice = calcSubPrice(elem);
       }
-      let newCart = cart.products.filter((elem) => elem.item.id === id);
-      return newCart.length > 0 ? true : false;
+      return elem;
+    });
+    cart.totalPrice = calcTotalPrice(cart.products);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    getCart();
+  }
+  function checkProductInCart(id) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (!cart) {
+      cart = {
+        products: [],
+        totalPrice: 0,
+      };
     }
-    return (
-      <productsContext.Provider
-        value={{
-          productsData: state.productsData,
-          paginationPages: state.paginationPages,
-          productToEdit: state.productToEdit,
-          detailsData: state.detailsData,
-          cart: state.cart,
-          cartLength: state.cartLength,
-          getProducts,
-          addProduct,
-          deleteProduct,
-          editProduct,
-          saveEditedProduct,
-          showDetails,
-          addProductToCart,
-          getCart,
-          changeProductCount,
-          checkProductInCart,
-        }}
-      >
-        {children}
-      </productsContext.Provider>
-    );
-  };
-  export default ProductsContextProvider;
+    let newCart = cart.products.filter((elem) => elem.item.id === id);
+    return newCart.length > 0 ? true : false;
+  }
+  return (
+    <productsContext.Provider
+      value={{
+        productsData: state.productsData,
+        paginationPages: state.paginationPages,
+        productToEdit: state.productToEdit,
+        detailsData: state.detailsData,
+        cart: state.cart,
+        cartLength: state.cartLength,
+        getProducts,
+        addProduct,
+        deleteProduct,
+        editProduct,
+        saveEditedProduct,
+        showDetails,
+        addProductToCart,
+        getCart,
+        changeProductCount,
+        checkProductInCart,
+      }}
+    >
+      {children}
+    </productsContext.Provider>
+  );
+};
+export default ProductsContextProvider;

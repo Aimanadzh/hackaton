@@ -13,8 +13,6 @@ const ProductListAdmin = (props) => {
 
     useEffect(() => {
         getProducts(props.history);
-        // console.log(paginationPages);
-        // console.log(productsData);
     }, []);
 
     const handlePage = (e, page) => {
@@ -24,9 +22,6 @@ const ProductListAdmin = (props) => {
         setPage(page);
         getProducts(history);
     };
-    // console.log(productsData);
-    // console.log(typeof productsData);
-    // console.log(paginationPages);
     return (
         <>
             {productsData ? (

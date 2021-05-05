@@ -1,64 +1,81 @@
 import { CircularProgress } from "@material-ui/core";
 import React, { useContext, useEffect } from "react";
-import { productsContext } from "../../context/ProductsContext"; 
-import { calcTotalPrice } from "../../helpers/CalcPrice"; 
-import "./Cart.css";
-
-
+import { productsContext } from "../../context/ProductsContext";
+import { calcTotalPrice } from "../../helpers/CalcPrice";
+import { Link } from "react-router-dom";
 const Cart = () => {
-  const { getCart, cart, changeProductCount } = useContext(productsContext);
-
-  useEffect(() => {
-    getCart();
-  }, []);
-  return (
-    <div className="cart">
-      {cart?.products ? (
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Count</th>
-                <th>SubPrice</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cart.products.map((elem) => (
-                <tr key={elem.item.id}>
-                  <td>
-                    <img
-                      style={{ width: "55px" }}
-                      src={elem.item.img1}
-                      alt="product_img"
-                    />
-                  </td>
-                  <td>{elem.item.name}</td>
-                  <td>{elem.item.price}</td>
-                  <td>
-                    <input
-                      onChange={(e) =>
-                        changeProductCount(e.target.value, elem.item.id)
-                      }
-                      type="number"
-                      value={elem.count}
-                    />
-                  </td>
-                  <td>{elem.subPrice}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <h4>Total:{calcTotalPrice(cart.products)}</h4>
-          <button>Купить</button>
+    const { getCart, cart, changeProductCount, deleteFromCart } = useContext(
+        productsContext
+    );
+    useEffect(() => {
+        getCart();
+    }, []);
+    return (
+        <div className="cart">
+            <h1>Cart</h1>
+            {cart?.products ? (
+                <div>
+                    {" "}
+                    {cart.products.map((elem) => (
+                        <div className="cart__items">
+                            <div>
+                                <img className="img_product" src={elem.item.img1} style={{width: "200px"}} />
+                            </div>
+                            <div className="item__title">
+                                {" "}
+                                <div className="item__name">
+                                    Name: {elem.item.name}
+                                </div>
+                                <div className="item__price">
+                                    Price: {elem.item.price}
+                                </div>
+                            </div>
+                            <div className="item__count__div">
+                                <div className="item__count__span">Count: </div>
+                                <input
+                                    className="item__count"
+                                    onChange={(e) =>
+                                        changeProductCount(
+                                            e.target.value,
+                                            elem.item.id
+                                        )
+                                    }
+                                    type="number"
+                                    value={elem.count}
+                                />
+                            </div>
+                            <div className="item__subprice">
+                                <div className="price_subprice">
+                                    {" "}
+                                    <div className="item__subprice__div">
+                                        SubPrice:{" "}
+                                    </div>
+                                    <div>$ {elem.subPrice}</div>
+                                </div>
+                                <div>
+                                    <button
+                                        className="delete__from__cart"
+                                        onClick={() =>
+                                            deleteFromCart(elem.item.id)
+                                        }
+                                    >
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                    <h4>
+                        Total: {calcTotalPrice(cart.products)} ${" "}
+                        <Link to="/payment">
+                            <button className="buy-btn">Buy</button>
+                        </Link>
+                    </h4>
+                </div>
+            ) : (
+                <CircularProgress />
+            )}
         </div>
-      ) : (
-        <CircularProgress />
-      )}
-    </div>
-  );
+    );
 };
-
 export default Cart;

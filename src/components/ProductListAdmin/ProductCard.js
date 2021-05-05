@@ -40,47 +40,38 @@ const ProductCard = ({ item }) => {
   const { deleteProduct, editProduct, showDetails } = useContext(productsContext);
   return (
     <div style={{ margin: 20 }}>
+      <Card
+        className="details"
+        style={{ padding: 15 }}
+        className={classes.root}
+      >
       <CardMedia className={classes.media} image={item.img1} />
-      <Card style={{ padding: 15 }} className={classes.root}>
-        <div className="product_name">{item.name}</div>
-        <div
-          style={{ lineHeight: "40px", fontSize: "25px" }}
-          className="product_category"
-        >
-          {item.category}
+        <div style={{ marginLeft: "40px" }}>
+          <div
+            style={{ lineHeight: "40px", fontSize: "25px" }}
+            className="product_name"
+          >
+            {item.name}
+          </div>
+          <div className="product_category">{item.category}</div>
         </div>
-        <CardContent>
+        <CardContent style={{ marginLeft: "25px" }}>
           <Typography variant="body2" color="textSecondary" component="p">
             {" "}
             <div style={{ lineHeight: "30px" }} className="product_description">
-              <img
-                alt=""
-                style={{ width: 17, marginRight: 5 }}
-                src=""/////////////////////////////////////
-              />
               {item.description}
             </div>
-            <div style={{ lineHeight: "30px" }} className="product_price">
-              <img
-                alt=""
-                style={{ width: 17, marginRight: 5 }}
-                src=""////////////
-              />
-              {item.price}
-            </div>
             <div style={{ lineHeight: "30px" }} className="product_color">
-              <img
-                alt=""
-                style={{ width: 17, marginRight: 5 }}
-                src=""//////////////
-              />
               {item.color}
             </div>
             <div
               style={{ fontSize: 27, color: "black", lineHeight: "40px" }}
               className="product_material"
             >
-              {item.material} $
+              {item.material} 
+            </div>
+            <div style={{ lineHeight: "30px" }} className="product_price">
+              $ {item.price}
             </div>
           </Typography>
         </CardContent>
