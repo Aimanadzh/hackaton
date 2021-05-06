@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function EditModal() {
+export default function ModalEdit() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
 
@@ -35,7 +35,7 @@ export default function EditModal() {
   };
 
   return (
-    <Link to="/market">
+    <Link to="/admin">
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

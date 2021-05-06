@@ -1,36 +1,37 @@
-
 import React, { useContext } from "react";
 import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/brandlogoblack.svg"
 import { IconButton } from "@material-ui/core";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import Badge from "@material-ui/core/Badge";
+import { productsContext } from "../../context/ProductsContext";
 
 const Header = () => {
+
+    const { cartLength } = useContext(productsContext);
+
     return (
     <div>
       <div className="header">
         <div className="container">
           <div className="navbar">
             <div className="navbar__regisrt">
-              <Link>
-                <IconButton>
-                <ShoppingCartIcon />
-                </IconButton>
+              <Link to="/cart">
+                <Badge badgeContent={cartLength} color="secondary">
+                  <ShoppingCartIcon />
+                </Badge>
               </Link>
               <Link to="/login">
-                <IconButton>
-                  <AccountCircleIcon className="login" />
-                </IconButton>
+                <span>Log In</span>
               </Link>
               <Link to="/signup">
-                
+
                 <button className="signup">Sign up</button>
               </Link>
             </div>
-            
+
             <div className="header__logo">
               <Link to="/">
                 <div>
@@ -61,5 +62,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
