@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
+import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import { productsContext } from "../../context/ProductsContext";
 
@@ -25,6 +26,7 @@ export default function Review() {
   let persons = JSON.parse(localStorage.getItem("persons"));
   let cards = JSON.parse(localStorage.getItem("cards"));
   let testCart = JSON.parse(localStorage.getItem("cart"));
+
   function saveOrder() {
     let newOrder = {
       firstName: persons.firstName,
@@ -56,7 +58,7 @@ export default function Review() {
             {testCart.products.map((elem) => (
               <ListItem className={classes.listItem} key={elem.item.name}>
                 <ListItemText
-                  primary={elem.item.model}
+                  primary={elem.item.name}
                   secondary={elem.item.price}
                 />
                 <Typography variant="body2">
@@ -70,10 +72,6 @@ export default function Review() {
         )}
 
         <ListItem className={classes.listItem}>
-          <ListItemText primary="Total" />
-          <Typography variant="subtitle1" className={classes.total}>
-            {testCart.totalPrice}
-          </Typography>
         </ListItem>
       </List>
       <Grid container spacing={2}>
@@ -113,7 +111,13 @@ export default function Review() {
             </React.Fragment>
           </Grid>
         </Grid>
-        <button onClick={() => saveOrder()}>save</button>
+        <Button
+          onClick={() => saveOrder()}
+          variant="contained"
+          color="secondary"
+        >
+          save
+        </Button>
       </Grid>
     </React.Fragment>
   );

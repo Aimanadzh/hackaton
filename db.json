@@ -1,188 +1,6 @@
 {
   "products": [
     {
-      "id": 0,
-      "category": "Watches",
-      "name": "Crystal Lake Watch",
-      "description": "Inspired by the beauty of crystal, Swarovski have created a one-of-a-kind watch that truly epitomizes our artistry and quality. The Crystal Lake timepiece features a stunning dial crafted from a single piece of sparkling sapphire crystal. Unique and beautiful, the dark gray dial takes center stage in the design, bound with a minimalistic rose gold-plated round case and an uncomplicated black leather strap. Elegant, feminine, and modern, it will stamp your look with fresh and luxurious appeal. Specifications: Case - 35 mm; Water resistant up to 50 m; K1 Mineral Glass; Swiss made.",
-      "price": 10000,
-      "color": "Black",
-      "material": "Rose-gold tone plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_auto,f_auto,w_auto/5480507_png/crystalline-oval-watch--metal-bracelet--black--rose-gold-tone-pvd-swarovski-5480507.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 1,
-      "category": "Watches",
-      "name": "Crystalline Oval Watch",
-      "description": "Add glamorous Swarovski sparkle to your wrist with this chic and innovative timepiece. The white leather strap, white silver-tone sunray dial, and rose gold-plated metal combine perfectly with the sleekly-designed case, which is embellished with over 1’700 crystals. Specifications: Case - 37 mm; Water resistant up to 30 m; Swiss made. A feminine accessory to wear alone or to stack with other Swarovski pieces for on-trend layering.",
-      "price": 11000,
-      "color": "White",
-      "material": "Rose-gold tone plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5230946_png/crystalline-oval-watch--leather-strap--white--rose-gold-tone-pvd-swarovski-5230946.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 2,
-      "category": "Watches",
-      "name": "Crystalline Oval Watch",
-      "description": "Displaying a striking combination of feminine rose gold and on-trend blue, this sleek and contemporary Octea Lux watch blends modern luxury with feminine sophistication. Its rose gold-tone stainless steel case elegantly offsets the dark indigo crystal bezel, blue sunray dial with applied rose gold-tone coated index markers, and blue genuine leather strap with embossed crocodile structure. Specifications: Case - 39 mm; water resistant to 50 m; Swiss Made.",
-      "price": 12000,
-      "color": "Blue",
-      "material": "Leather",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5414413_png/octea-lux-watch--leather-strap--blue--rose-gold-tone-pvd-swarovski-5414413.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 3,
-      "category": "Watches",
-      "name": "Crystal Flower Watch",
-      "description": "This Swarovski watch displays a brilliant integration of natural forms and modern design. Inspired by flowers, the bezel features two intertwined rows of bright crystals on rose-gold tone PVD coating. Nestled among these sparkling lines sits a ruby-tone colored sunray dial adorned with crystal index markers and the Swarovski logo at 12 o'clock. A ruby, genuine leather strap adds the finishing touch to this Swiss Made watch. Dress up your style with this floral timepiece to add extraordinary romance to your every day.",
-      "price": 13000,
-      "color": "Red",
-      "material": "Leather",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5552780_png/crystal-flower-watch--leather-strap--red--rose-gold-tone-pvd-swarovski-5552780.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 4,
-      "category": "Watches",
-      "name": "Octea Lux Chrono Watch",
-      "description": "This Swarovski watch displays a brilliant integration of natural forms and modern design. Inspired by flowers, the bezel features two intertwined rows of bright crystals on rose-gold tone PVD coating. Nestled among these sparkling lines sits a ruby-tone colored sunray dial adorned with crystal index markers and the Swarovski logo at 12 o'clock. A ruby, genuine leather strap adds the finishing touch to this Swiss Made watch. Dress up your style with this floral timepiece to add extraordinary romance to your every day.",
-      "price": 14000,
-      "color": "Green",
-      "material": "Leather",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5452498_png/octea-lux-chrono-watch--leather-strap--green--rose-gold-tone-pvd-swarovski-5452498.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 5,
-      "category": "Jewerly",
-      "name": "Angelic Rectangular Necklace",
-      "description": "This beautiful Swarovski necklace is a timeless classic. It features a single green, rectangular stone which adorns a shimmering chain and is surrounded by sparkling pavé. Its simple yet elegant design makes it a great choice to dress up everyday looks. Combine it with matching pieces of jewelry for a sparkling ensemble. A beautiful gift for someone close to you.",
-      "price": 15000,
-      "color": "Green",
-      "material": "Rhodium plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5559380_png/angelic-rectangular-necklace--green--rhodium-plated-swarovski-5559380.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 6,
-      "category": "Jewerly",
-      "name": "Tigris Cuff",
-      "description": "This glamorous cuff joins our Tigris collection by Atelier Swarovski, which has been refreshed and reimagined for the new season. Inspired by the river Tigris, its design emulates water droplets and the movement of water. The flowing, organic silhouette blends glittering crystal Pointiage® with large clear crystals, creating a classic look with a contemporary twist. Wear it with a simple shift dress for effortless day-to-evening elegance, or play with contrasts and pair it with a sharp suit.",
-      "price": 16000,
-      "color": "Gray",
-      "material": "Rhodium plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5569069_png/tigris-cuff--white--gold-tone-plated-swarovski-5569069.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 7,
-      "category": "Jewerly",
-      "name": "Beautiful Earth by Susan Rockefeller Necklace",
-      "description": "Conservationist and jewelry designer Susan Rockefeller has drawn inspiration from the planet’s natural beauty for her new collaboration with Atelier Swarovski. Focusing on the panda and its favorite food, bamboo, the new collection seeks to remind us of the earth’s abundance and fragility, urging us to protect it for future generations. This statement bib necklace sparkles with an abundant array of vibrant green crystals in different shapes on a gold-tone plated chain. Perfect for glamorous nights out, this gorgeous design has a luxurious style. Matching items are available.",
-      "price": 17000,
-      "color": "Green",
-      "material": "Gold-tone plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5535897_png/beautiful-earth-by-susan-rockefeller-necklace--bib--dark-multi-colored--gold-tone-plated-swarovski-5535897.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 8,
-      "category": "Jewerly",
-      "name": "Curiosa stud earring",
-      "description": "Bring a sense of magic to your wardrobe with this single stud earring. It’s spherical form is intricately designed, with bichromatic technology giving the blue triangle princess cut stones a kaleidoscopic effect. Complete with clear stone embellishments and set in a gold-tone plated frame, style it as a rhodium plated piece, or mix with other earrings from the Curiosa family to define your own version of modern chic. This piece is a single earring; it is sold as one unit and does not come as a pair. This earring is part of the Curiosa family, designed by Creative Director Giovanna Engelbert for Collection I.",
-      "price": 18000,
-      "color": "Blue",
-      "material": "Swarovski crystals, Gold-tone plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5606952_png/curiosa-stud-earring--single--round--blue--gold-tone-plated-swarovski-5606952.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 9,
-      "category": "Jewerly",
-      "name": "Beautiful Earth by Susan Rockefeller Ring Set",
-      "description": "Conservationist and jewelry designer Susan Rockefeller has drawn inspiration from the planet’s natural beauty for her new collaboration with Atelier Swarovski. Focusing on the panda and its favorite food, bamboo, the new collection seeks to remind us of the earth’s abundance and fragility, urging us to protect it for future generations. This statement gold-tone plated design is a spectacular showcase of crystal brilliance for any outfit. The set of six rings sparkle with a multitude of different crystals in an array of cuts and colors, creating a truly mesmerizing effect. Wear them all together on one finger for a modern stacked look, or wear them alone for pared-back styling. Matching items are available. ",
-      "price": 19000,
-      "color": "Dark multi-colored",
-      "material": "Gold-tone plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5535895_png/beautiful-earth-by-susan-rockefeller-ring-set-%286%29--dark-multi-colored--gold-tone-plated-swarovski-5535895.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 10,
-      "category": "Jewerly",
-      "name": "Swarovski Sparkling Dance Round Necklace",
-      "description": "Featuring a round dark red stone inside a pavé-embellished 3D cage, this sophisticated rose gold-plated necklace is inspired by the idea of a ‘dancing crystal’. An essential addition to any jewelry box, it will give your daytime style a playful sparkle.",
-      "price": 20000,
-      "color": "White",
-      "material": "Rose-gold tone plated",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5279421_png/swarovski-sparkling-dance-round-necklace--red--rose-gold-tone-plated-swarovski-5279421.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 11,
-      "category": "Accessories",
-      "name": "Crystalline Celebration 2021 Ballpoint Pen",
-      "description": "Celebrate 2021 in style with this Crystalline ballpoint pen by Swarovski. Its barrel is filled with hundreds of clear crystals, adding their brilliant sparkle to the beautiful white and rose-gold tone design. The top of the pen features the year '2021' to mark the occasion. A lifelong bow charm in crystal pavé attaches to the pen for a uniquely charming touch. The charm is removable and can be worn separately with other accessories or pieces of jewelry. A splendid gift for any special occasion.",
-      "price": 21000,
-      "color": "White",
-      "material": "Metal",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5553339_png/crystalline-celebration-2021-ballpoint-pen--white--rose-gold-tone-plated-swarovski-5553339.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
-      "id": 12,
-      "category": "Accessories",
-      "name": "High Smartphone Case with Bumper",
-      "description": "If you view your phone as part of your look, this Swarovski phone case is perfect for you. It is fully crystallized with numerous gold-tone colored Swarovski crystals that gleam and sparkle whenever you take it out of your purse. Invisible bumpers inside the case add an extra layer of protection for your phone. This case is compatible with official Apple chargers and the iPhone® 2019. iPhone® is a trademark of Apple Inc. ",
-      "price": 22000,
-      "color": "Gold tone",
-      "material": "TPU (thermoplastic polyurethane), Stainless steel",
-      "madeIn": "Switzerland",
-      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_500/5533961_png/high-smartphone-case-with-bumper--iphone%C2%AE-11-pro--gold-tone-swarovski-5533961.png",
-      "img2": "",
-      "img3": "",
-      "video": ""
-    },
-    {
       "id": 13,
       "category": "Accessories",
       "name": "Swarovski Sunglasses",
@@ -379,17 +197,17 @@
       "video": ""
     },
     {
-      "name": "fffffffffffffffffffffff",
-      "category": "jjjjjjjjjjjjj",
-      "description": "pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp",
-      "price": "55555555555555555",
-      "color": "mmmmmmmmmmmmmmmmm",
-      "material": "ooooooooooooooooo",
-      "madeIn": "yyyyyyyyyyyyyyyyyyyyyyyy",
-      "img1": "https://images.unsplash.com/photo-1620181205182-90243f9d1152?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1188&q=80",
-      "img2": "https://images.unsplash.com/photo-1620181205182-90243f9d1152?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1188&q=80",
-      "img3": "https://images.unsplash.com/photo-1620181205182-90243f9d1152?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1188&q=80",
-      "video": "https://images.unsplash.com/photo-1620181205182-90243f9d1152?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1188&q=80",
+      "name": "Swarovski Iconic Swan Pendant",
+      "category": "Jewerly",
+      "description": "Instantly recognizable as a Swarovski design, this fashion-forward pendant features an updated take on our iconic swan motif. The rose gold-plated metal is perfectly complemented by golden-colored crystals, set in our exclusive Pointiage® technique for added sparkle. A romantic look with cool and contemporary edge. The pendant comes on a chain.",
+      "price": "789",
+      "color": "White",
+      "material": "Metal",
+      "madeIn": "Russia",
+      "img1": "https://asset.swarovski.com/images/$size_1450/t_swa002/c_scale,dpr_2.0,f_auto,w_600/5368988_ms1/swarovski-iconic-swan-pendant--white--rose-gold-tone-plated-swarovski-5368988.jpg",
+      "img2": "https://asset.swarovski.com/images/$size_1450/t_swa002/c_scale,dpr_2.0,f_auto,w_600/5368988_ms1/swarovski-iconic-swan-pendant--white--rose-gold-tone-plated-swarovski-5368988.jpg",
+      "img3": "https://asset.swarovski.com/images/$size_1450/t_swa002/c_scale,dpr_2.0,f_auto,w_600/5368988_ms1/swarovski-iconic-swan-pendant--white--rose-gold-tone-plated-swarovski-5368988.jpg",
+      "video": "https://asset.swarovski.com/images/$size_1450/t_swa002/c_scale,dpr_2.0,f_auto,w_600/5368988_ms1/swarovski-iconic-swan-pendant--white--rose-gold-tone-plated-swarovski-5368988.jpg",
       "id": 27
     }
   ],
@@ -424,44 +242,39 @@
       "email": "nanan@gmail.com",
       "id": "E5Zz2Q6bsqT3X3zubyLJGkQY8gK2",
       "isAdmin": false
+    },
+    {
+      "email": "turumkuloff@gmail.com",
+      "id": "t7yiUBsfJ8MllFpDtTKlbJ6lkt02",
+      "isAdmin": false
+    },
+    {
+      "email": "test@gmail.com",
+      "id": "km0dZSpedCTh1YPCnpvzcpORLTL2",
+      "isAdmin": false
+    },
+    {
+      "email": "test1@gmail.com",
+      "id": "XDZxIdhbzCUB4qYCiJfoClzr1tx2",
+      "isAdmin": false
+    },
+    {
+      "email": "test2@gmail.com",
+      "id": "nyWQBpak0Qegq8KA7ASfQzRcPeu1",
+      "isAdmin": false
+    },
+    {
+      "email": "jhjhjhjhj@gamil.com",
+      "id": "Yjio0ZaWjBVdZo6hvk5HSKicAro2",
+      "isAdmin": false
+    },
+    {
+      "email": "test10@gmail.com",
+      "id": "1U2S2IdoyvdYb6cGbYyQspXHMEJ3",
+      "isAdmin": false
     }
   ],
   "orders": [
-    {
-      "firstName": "o",
-      "lastName": "o",
-      "address1": "o",
-      "address2": "o",
-      "city": "o",
-      "state": "o",
-      "zip": "o",
-      "country": "o",
-      "cardName": "1212121221",
-      "cardNumber": "1212 1212 1211 21212",
-      "cardExpiry": "12/12",
-      "cardCvc": "1212",
-      "order": [
-        {
-          "item": {
-            "id": 9,
-            "category": "Jewerly",
-            "name": "Beautiful Earth by Susan Rockefeller Ring Set",
-            "description": "Conservationist and jewelry designer Susan Rockefeller has drawn inspiration from the planet’s natural beauty for her new collaboration with Atelier Swarovski. Focusing on the panda and its favorite food, bamboo, the new collection seeks to remind us of the earth’s abundance and fragility, urging us to protect it for future generations. This statement gold-tone plated design is a spectacular showcase of crystal brilliance for any outfit. The set of six rings sparkle with a multitude of different crystals in an array of cuts and colors, creating a truly mesmerizing effect. Wear them all together on one finger for a modern stacked look, or wear them alone for pared-back styling. Matching items are available. ",
-            "price": 19000,
-            "color": "Dark multi-colored",
-            "material": "Gold-tone plated",
-            "madeIn": "Switzerland",
-            "img1": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_1.0,f_auto,w_600/5535895_png/beautiful-earth-by-susan-rockefeller-ring-set-%286%29--dark-multi-colored--gold-tone-plated-swarovski-5535895.png",
-            "img2": "",
-            "img3": "",
-            "video": ""
-          },
-          "count": "2",
-          "subPrice": 160000
-        }
-      ],
-      "id": 1
-    },
     {}
   ]
 }

@@ -24,7 +24,7 @@ const Watches = () => {
          <div class = "products">
             <div class = "container">
                   <h1 class = "lg-title">Swarovski</h1>
-                  <p class = "text-light">Braceles</p>
+                  <p class = "text-light">Watches</p>
 
                   <div class = "product-items">
                      <div class = "product">

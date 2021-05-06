@@ -1,6 +1,6 @@
-import React, { useCallback, useContext } from "react";
+import React, { useCallback } from "react";
 import app from "../../FireBase";
-import axios from "axios";
+import axios from "axios"
 import "./LogIn.css";
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -73,7 +73,7 @@ const Login = ({ history }) => {
         await app
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);
-        history.push("/home");
+        history.push("/");
       } catch (error) {
         alert(error);
       }

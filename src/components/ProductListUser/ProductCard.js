@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { productsContext } from "../../context/ProductsContext";
 import "./ProductCard.css";
 
-export default function ProductCard ({ item }) {
+const ProductCard  = ({ item }) => {
   const { showDetails, addProductToCart, checkProductInCart } = useContext(productsContext);
   console.log(productsContext);
   return (
@@ -14,12 +14,14 @@ export default function ProductCard ({ item }) {
                               <img src={item.img1} alt = "product image"/>
                            </div>
                            <div class = "product-btns">
+                              <Link to='/cart'>
                               <button type = "button" class = "btn-cart" 
                               onClick = {() => addProductToCart(item)}
-                              color={checkProductInCart(item.id) ? "secondary" : "disabled"}
+                              color={checkProductInCart(item.id) ? "secondary" : ""}
                               > add to cart
                                     <span><i class = "fas fa-plus"></i></span>
                               </button>
+                              </Link>
                               <Link to="/payment">
                               <button type = "button" class = "btn-buy" > buy now
                                     <span><i class = "fas fa-shopping-cart"></i></span>
@@ -44,6 +46,7 @@ export default function ProductCard ({ item }) {
       </Link>    
     );
   };
-    
+
+  export default ProductCard;
 
 

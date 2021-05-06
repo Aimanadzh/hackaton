@@ -21,16 +21,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function EditModal() {
+export default function Edit() {
   const { productToEdit, editProduct: fetchProduct, saveEditedProduct } = useContext(
     productsContext
   );
   const [editProduct, setEditProduct] = useState(productToEdit);
   const [check, setCheck] = useState(false);
   const classes = useStyles();
-  //   const [open, setOpen] = React.useState(true);
   const params = useParams();
   const [openSpinner, setOpenSpinner] = React.useState(true);
+
   useEffect(() => {
     setEditProduct(productToEdit);
     if (productToEdit) {
@@ -38,9 +38,6 @@ export default function EditModal() {
     }
   }, [productToEdit]);
 
-  //   const handleClose = () => {
-  //     setOpen(false);
-  //   };
   const handleCloseSpinner = () => {
     setOpenSpinner(false);
   };
@@ -55,7 +52,6 @@ export default function EditModal() {
       [e.target.name]: e.target.value,
     };
     setEditProduct(editedProduct);
-    console.log(editedProduct);
   };
 
   return (
@@ -124,16 +120,7 @@ export default function EditModal() {
             rowsMax={4}
             variant="outlined"
             value={editProduct.color}
-          />
-          <br />
-          <TextField
-            id="outlined-multiline-flexible"
-            name="price"
-            label="Price"
-            multiline
-            rowsMax={4}
-            variant="outlined"
-            value={editProduct.price}
+            onChange={handleValues}
           />
           <br />
           <TextField
@@ -144,6 +131,18 @@ export default function EditModal() {
             rowsMax={4}
             variant="outlined"
             value={editProduct.material}
+            onChange={handleValues}
+          />
+          <br />
+          <TextField
+            id="outlined-multiline-flexible"
+            name="madeIn"
+            label="MadeIn"
+            multiline
+            rowsMax={4}
+            variant="outlined"
+            value={editProduct.madeIn}
+            onChange={handleValues}
           />
           <br />
           <TextField
@@ -154,6 +153,7 @@ export default function EditModal() {
             rowsMax={4}
             variant="outlined"
             value={editProduct.img1}
+            onChange={handleValues}
           />
           <br />
           <TextField
@@ -164,6 +164,7 @@ export default function EditModal() {
             rowsMax={4}
             variant="outlined"
             value={editProduct.img2}
+            onChange={handleValues}
           />
 
           <br />
@@ -175,6 +176,7 @@ export default function EditModal() {
             rowsMax={4}
             variant="outlined"
             value={editProduct.img3}
+            onChange={handleValues}
           />
           <br />
           <TextField
@@ -185,6 +187,7 @@ export default function EditModal() {
             rowsMax={4}
             variant="outlined"
             value={editProduct.video}
+            onChange={handleValues}
           />
           <br />
           <Link to="/modal">

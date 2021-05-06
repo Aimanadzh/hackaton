@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import Slider from "@material-ui/core/Slider";
 import Button from "@material-ui/core/Button";
 import { AuthContext } from "../../context/AuthContext";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -22,9 +23,12 @@ const useStyles = makeStyles((theme) => ({
     width: 300,
   },
 }));
+
+
 const Sidebar = ({ history }) => {
   const { getProducts } = useContext(productsContext);
   const { isAdmin } = useContext(AuthContext);
+
   const handleChangeMemory = (e) => {
     if (e.target.value === "all") {
       history.push(`${history.location.pathname.replace("name")}`);
@@ -36,11 +40,13 @@ const Sidebar = ({ history }) => {
     history.push(`${history.location.pathname}?${search.toString()}`);
     getProducts(history);
   };
+
   const classes = useStyles();
   const [value, setValue] = React.useState([0, 100000]);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
   const showChangePrice = () => {
     const search = new URLSearchParams(history.location.search);
     history.push(
@@ -50,6 +56,8 @@ const Sidebar = ({ history }) => {
     getProducts(history);
     search.toString();
   };
+
+
   const [searchValue, setSearchValue] = useState(getSearchValue());
 
   const handleValue = (e) => {
@@ -59,14 +67,17 @@ const Sidebar = ({ history }) => {
     setSearchValue(e.target.value);
     getProducts(history);
   };
+
   function getSearchValue() {
     const search = new URLSearchParams(history.location.search);
     return search.get("q");
   }
+
+
   return (
     <Grid item m={3}>
       
-      {isAdmin ? (<h1>Admin</h1>) : <h1>user</h1>} 
+      {isAdmin ? (<h1>Admin Product List</h1>) : ("")} 
       <Paper>
         <input
           style={{ width: 300 }}
@@ -80,7 +91,7 @@ const Sidebar = ({ history }) => {
           <Slider
             value={value}
             onChange={handleChange}
-            valueLabelDisplay="jewerly"
+            valueLabelDisplay="SWAROVSKI"
             aria-labelledby="range-slider"
             min={0}
             max={100000}
@@ -99,7 +110,6 @@ const Sidebar = ({ history }) => {
             onChange={handleChangeMemory}
             aria-label="memory"
             name="memory"
-            // value={memory}
           >
             <FormControlLabel value="Jewerly" control={<Radio />} label="Jewerly" />
             <FormControlLabel value="Watches" control={<Radio />} label="Watches"/>

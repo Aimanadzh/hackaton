@@ -5,6 +5,7 @@ import {
   calcTotalPrice,
   getCountProductsInCart,
 } from "../helpers/CalcPrice";
+import { useHistory } from "react-router-dom";
 
 export const productsContext = React.createContext();
 const INIT_STATE = {
@@ -13,9 +14,11 @@ const INIT_STATE = {
   productToEdit: null,
   detailsData: null,
   cartLength: getCountProductsInCart(),
+  ordersData: []
 };
 
 const reducer = (state = INIT_STATE, action) => {
+  // const history = useHistory()
   switch (action.type) {
     case "GET_PRODUCTS":
       return {
@@ -24,43 +27,50 @@ const reducer = (state = INIT_STATE, action) => {
 
         paginationPages: Math.ceil(action.payload.headers["x-total-count"] / 4),
       };
-
     case "EDIT_PRODUCT":
       return { ...state, productToEdit: action.payload };
     case "DETAILS_PRODUCT":
       return { ...state, detailsData: action.payload };
     case "GET_CART":
       return { ...state, cart: action.payload };
+    case "GET_ORDERS":
+      return { ...state, ordersData: action.payload };
     case "CHANGE_CART_COUNT":
       return { ...state, cartLength: action.payload };
     default:
       return state;
   }
 };
+
 const ProductsContextProvider = ({ children }) => {
+
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
-  const history = useHistory();
+
   async function getProducts(history) {
+    console.log('here')
     const search = new URLSearchParams(history.location.search);
+    // console.log(history.location.search);
     search.set("_limit", 4);
     history.push(`${history.location.pathname}?${search.toString()}`);
     let res = await axios.get(
-      `http://localhost:8000/products${window.location.search}`//////////////
+      `http://localhost:8000/products${window.location.search}`
     );
     dispatch({
       type: "GET_PRODUCTS",
       payload: res,
     });
   }
-  const addProduct = (newProduct) => {
+  
+  const addProduct = (newProduct, history) => {
     axios.post("http://localhost:8000/products", newProduct);
+    getProducts(history);
+  };
 
-    getProducts();
-  };
-  const deleteProduct = async (id) => {
+  const deleteProduct = async (id, history) => {
     await axios.delete(`http://localhost:8000/products/${id}`);
-    getProducts();
+    getProducts(history);
   };
+
   const editProduct = async (id) => {
     let { data } = await axios(`http://localhost:8000/products/${id}`);
     dispatch({
@@ -68,9 +78,11 @@ const ProductsContextProvider = ({ children }) => {
       payload: data,
     });
   };
+
   const saveEditedProduct = async (editedProduct) => {
     await axios.patch(`http://localhost:8000/products/${editedProduct.id}`, editedProduct);
   };
+
   const showDetails = async (id) => {
     let { data } = await axios(`http://localhost:8000/products/${id}`);
     dispatch({
@@ -89,14 +101,17 @@ const ProductsContextProvider = ({ children }) => {
         totalPrice: 0,
       };
     }
+
     let newProduct = {
       item: product,
       count: 1,
       subPrice: product.price,
     };
+
     let filteredCart = cart.products.filter(
       (elem) => elem.item.id === product.id
     );
+
     if (filteredCart.length > 0) {
       cart.products = cart.products.filter(
         (elem) => elem.item.id !== product.id
@@ -104,14 +119,15 @@ const ProductsContextProvider = ({ children }) => {
     } else {
       cart.products.push(newProduct);
     }
-    newProduct.subPrice = calcSubPrice(newProduct);/////////////
-    cart.totalPrice = calcTotalPrice(cart.products);////////
+
+   
     localStorage.setItem("cart", JSON.stringify(cart));
     dispatch({
       type: "CHANGE_CART_COUNT",
       payload: cart.products.length,
     });
   }
+
   function getCart() {
     let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
@@ -127,7 +143,6 @@ const ProductsContextProvider = ({ children }) => {
   }
   function changeProductCount(count, id) {
     let cart = JSON.parse(localStorage.getItem("cart"));
-    console.log(cart, " 112");
 
     cart.products = cart.products.map((elem) => {
       if (elem.item.id === id) {
@@ -136,10 +151,12 @@ const ProductsContextProvider = ({ children }) => {
       }
       return elem;
     });
+
     cart.totalPrice = calcTotalPrice(cart.products);
     localStorage.setItem("cart", JSON.stringify(cart));
     getCart();
   }
+
   function checkProductInCart(id) {
     let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
@@ -151,6 +168,39 @@ const ProductsContextProvider = ({ children }) => {
     let newCart = cart.products.filter((elem) => elem.item.id === id);
     return newCart.length > 0 ? true : false;
   }
+
+  function deleteFromCart(id) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (!cart) {
+      cart = {
+        products: [],
+        totalPrice: 0,
+      };
+    }
+    cart.products = cart.products.filter((item) => {
+      return item.item.id !== id;
+    });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    getCart();
+    dispatch({
+      type: "CHANGE_CART_COUNT",
+      payload: cart.products.length,
+    });
+  }
+
+  const addOrder = (newOrder) => {
+    axios.post("http://localhost:8000/orders", newOrder);
+  };
+
+  async function getOrders() {
+    let { data } = await axios.get(`http://localhost:8000/orders`);
+    dispatch({
+      type: "GET_ORDERS",
+      payload: data,
+    });
+  }
+
+
   return (
     <productsContext.Provider
       value={{
@@ -160,6 +210,7 @@ const ProductsContextProvider = ({ children }) => {
         detailsData: state.detailsData,
         cart: state.cart,
         cartLength: state.cartLength,
+        ordersData: state.ordersData,
         getProducts,
         addProduct,
         deleteProduct,
@@ -170,10 +221,14 @@ const ProductsContextProvider = ({ children }) => {
         getCart,
         changeProductCount,
         checkProductInCart,
+        deleteFromCart,
+        addOrder,
+        getOrders
       }}
     >
       {children}
     </productsContext.Provider>
   );
 };
+
 export default ProductsContextProvider;
