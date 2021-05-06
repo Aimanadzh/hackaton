@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
 }));
-const ProductCard = ({ item }) => {
+const ProductCard = ({ item, history }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const { deleteProduct, editProduct, showDetails } = useContext(productsContext);
@@ -81,7 +81,7 @@ const ProductCard = ({ item }) => {
             color="secondary"
             className={classes.button}
             startIcon={<DeleteIcon />}
-            onClick={() => deleteProduct(item.id)}
+            onClick={() => deleteProduct(item.id, history)}
           >
             Delete
           </Button>
@@ -95,15 +95,9 @@ const ProductCard = ({ item }) => {
               Edit
             </Button>
           </Link>
-          <IconButton aria-label="add to favorites">
-            <FavoriteIcon />
-          </IconButton>
-          <IconButton aria-label="share">
-            <ShoppingCartIcon />
-          </IconButton>
           <Link to="/details">
             <IconButton
-              onClick={() => showDetails(item.id)}
+              onClick={() => showDetails(item.id, history)}
               aria-expanded={expanded}
               aria-label="show more"
             >

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { productsContext } from "../../context/ProductsContext"; 
+import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
@@ -13,6 +14,7 @@ const AddProduct = () => {
   const { addProduct } = useContext(productsContext);
   const [showAlert, setShowAlert] = useState(false);
   const [showError, setShowError] = useState(false);
+  const history = useHistory();
   const useStyles = makeStyles((theme) => ({
     root: {
       "& .MuiTextField-root": {
@@ -59,7 +61,6 @@ const AddProduct = () => {
       setShowError(true);
       return;
     }
-    console.log(product);
     setProduct({
       name: "",
       category: "",
@@ -73,53 +74,12 @@ const AddProduct = () => {
       img3: "",
       video: "",
     });
-    addProduct(product);
+    addProduct(product, history);
     setShowAlert(true);
   };
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      {showAlert ? (
-        <Alert
-          action={
-            <IconButton
-              aria-label="close"
-              color="inherit"
-              size="small"
-              onClick={() => {
-                setShowAlert(false);
-              }}
-            >
-              <CloseIcon fontSize="inherit" />
-            </IconButton>
-          }
-        >
-          You have added a new product!
-        </Alert>
-      ) : (
-        ""
-      )}
-      {showError ? (
-        <Alert
-          severity="error"
-          action={
-            <IconButton
-              aria-label="close"
-              color="inherit"
-              size="small"
-              onClick={() => {
-                setShowError(false);
-              }}
-            >
-              <CloseIcon fontSize="inherit" />
-            </IconButton>
-          }
-        >
-          Fill in all the fields!
-        </Alert>
-      ) : (
-        ""
-      )}
       <TextField
         id="outlined-multiline-flexible"
         name="name"
@@ -241,6 +201,47 @@ const AddProduct = () => {
         value={product.video}
       />
       <br />
+      {showAlert ? (
+        <Alert
+          action={
+            <IconButton
+              aria-label="close"
+              color="inherit"
+              size="small"
+              onClick={() => {
+                setShowAlert(false);
+              }}
+            >
+              <CloseIcon fontSize="inherit" />
+            </IconButton>
+          }
+        >
+          You have added a new product!
+        </Alert>
+      ) : (
+        ""
+      )}
+      {showError ? (
+        <Alert
+          severity="error"
+          action={
+            <IconButton
+              aria-label="close"
+              color="inherit"
+              size="small"
+              onClick={() => {
+                setShowError(false);
+              }}
+            >
+              <CloseIcon fontSize="inherit" />
+            </IconButton>
+          }
+        >
+          Fill in all the fields!
+        </Alert>
+      ) : (
+        ""
+      )}
       <Button
         variant="contained"
         color="primary"

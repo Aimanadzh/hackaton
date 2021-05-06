@@ -1,4 +1,4 @@
-import React, { useContext, useHistory } from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/brandlogoblack.svg"
@@ -8,7 +8,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Badge from "@material-ui/core/Badge";
 import { productsContext } from "../../context/ProductsContext";
 
-export default function Header () {
+const Header = () => {
 
     const { cartLength } = useContext(productsContext);
 
@@ -61,3 +61,4 @@ export default function Header () {
   );
 };
 
+export default Header;

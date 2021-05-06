@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-credit-cards";
-// import "./PaymentForm.css";
 import SupportedCards from "./Cards";
 import {
   formatCreditCardNumber,
@@ -120,7 +119,16 @@ export default class App extends React.Component {
               </div>
             </div>
             <div className="form-actions">
-              <button>PAY</button>
+              <button
+                style={{
+                  backgroundColor: "#f3163c",
+                  width: "100px",
+                  height: 50,
+                  border: "none",
+                }}
+              >
+                PAY
+              </button>
             </div>
           </form>
           {formData && (

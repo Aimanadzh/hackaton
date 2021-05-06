@@ -16,10 +16,9 @@ import ProductsContextProvider from './context/ProductsContext';
 import PrivateRoute from './components/PrivateRoute';
 import Details from './components/Details/Details';
 import Checkout from './components/OrderForm/Checkout';
-import EditModal from './components/EditModal/Modal';
+import Edit from './components/EditModal/Edit';
 import Jewerly from './components/Jewerly/Jewerly';
 import Watches from './components/Watches/Watches';
-import Details from './components/Details/Details';
 import Footer from './components/Footer/Footer';
 import Accessories from './components/Accessories/Accessories';
 import Decoration from './components/Decoration/Decoration';
@@ -30,8 +29,8 @@ import Gift from './components/Gift/Gift';
 const Routes = () => {
   return (
     <AuthContextProvider>
-      <ProductsContextProvider>
         <BrowserRouter>
+      <ProductsContextProvider>
           <Header />
           <Switch>
             <PrivateRoute exact path ="/admin" component={Admin} />
@@ -43,7 +42,7 @@ const Routes = () => {
             <Route exact path="/details" component={Details} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/edit/:id" component={EditModal} />
+            <Route exact path="/edit/:id" component={Edit} />
             <Route exact path="/modal" component={Modal} />
             <Route exact path="/shop" component={ProductsListUser} />
             <Route exact path="/cart" component={Cart} />
@@ -54,8 +53,8 @@ const Routes = () => {
             <Route exact path="/gift" component={Gift} />
           </Switch>
           <Footer/>
-        </BrowserRouter>
       </ProductsContextProvider>
+        </BrowserRouter>
     </AuthContextProvider>
   );
 };

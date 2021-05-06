@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Grid, makeStyles, Paper } from "@material-ui/core";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
@@ -9,6 +9,9 @@ import { productsContext } from "../../context/ProductsContext";
 import Typography from "@material-ui/core/Typography";
 import Slider from "@material-ui/core/Slider";
 import Button from "@material-ui/core/Button";
+import { useHistory } from "react-router-dom";
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -21,8 +24,10 @@ const useStyles = makeStyles((theme) => ({
     width: 300,
   },
 }));
-const Sidebar = ({ history }) => {
+const Sidebar = () => {
+  const history = useHistory();
   const { getProducts } = useContext(productsContext);
+
   const handleChangeMemory = (e) => {
     if (e.target.value === "all") {
       history.push(`${history.location.pathname.replace("category")}`);
@@ -33,25 +38,14 @@ const Sidebar = ({ history }) => {
     search.set("category", e.target.value);
     history.push(`${history.location.pathname}?${search.toString()}`);
     getProducts(history);
-    // setMemory(e.target.value);
+    
   };
-  // const handleChangePrice = (e) => {
-  //   if (e.target.value === "all") {
-  //     history.push(`${history.location.pathname.replace("price")}`);
-  //     getProducts(history);
-  //     return;
-  //   }
-  //   const search = new URLSearchParams(history.location.search);
-  //   search.set("price", e.target.value);
-  //   history.push(`${history.location.pathname}?${search.toString()}`);
-  //   getProducts(history);
-  // };
+ 
   const classes = useStyles();
   const [value, setValue] = React.useState([0, 20000]);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  // const [memory, setMemory] = useState(getMemory());
   const showChangePrice = () => {
     const search = new URLSearchParams(history.location.search);
     history.push(
@@ -60,18 +54,22 @@ const Sidebar = ({ history }) => {
     getProducts(history);
     search.toString();
   };
-  // function getMemory() {
-  //   const search = new URLSearchParams(history.location.search);
-  //   return search.get("category");
-  // }
-  //kod kubata
-  // function handleSliderValue(e, value) {
-  //   const search = new URLSearchParams(history.location.search);
-  //   search.set("price", e.target.value);
-  //   history.push(`${history.location.pathname}?${search.toString()}`);
-  //   getProducts(history);
-  //   setValue(value);
-  // }
+
+  const [searchValue, setSearchValue] = useState(getSearchValue());
+
+  const handleValue = (e) => {
+    const search = new URLSearchParams(history.location.search);
+    search.set("q", e.target.value);
+    history.push(`${history.location.pathname}?${search.toString()}`);
+    setSearchValue(e.target.value);
+    getProducts(history);
+  };
+  function getSearchValue() {
+    const search = new URLSearchParams(history.location.search);
+    return search.get("q");
+  }
+
+
   return (
     <Grid item m={3}>
       <Paper>
@@ -82,7 +80,7 @@ const Sidebar = ({ history }) => {
           <Slider
             value={value}
             onChange={handleChange}
-            valueLabelDisplay="jewerly"
+            valueLabelDisplay="SWAROVSKI"
             aria-labelledby="range-slider"
             min={0}
             max={100000}
@@ -96,17 +94,17 @@ const Sidebar = ({ history }) => {
       <Paper className={classes.paper}>
         {" "}
         <FormControl component="fieldset">
-          <FormLabel component="legend">Memory</FormLabel>
+          <FormLabel component="legend">Categories</FormLabel>
           <RadioGroup
             onChange={handleChangeMemory}
-            aria-label="memory"
-            name="memory"
-            // value={memory}
+            aria-label="category"
+            name="category"
           >
-            <FormControlLabel value="64" control={<Radio />} label="64" />
-            <FormControlLabel value="128" control={<Radio />} label="128" />
-            <FormControlLabel value="512" control={<Radio />} label="512" />
-            <FormControlLabel value="1024" control={<Radio />} label="1024" />
+            <FormControlLabel value="Jewerly" control={<Radio />} label="Jewerly" />
+            <FormControlLabel value="Watches" control={<Radio />} label="Watches" />
+            <FormControlLabel value="Accessories" control={<Radio />} label="Accessories" />
+            <FormControlLabel value="Decorations" control={<Radio />} label="Decorations" />
+            <FormControlLabel value="Gifts" control={<Radio />} label="Gifts" />
             <FormControlLabel value="all" control={<Radio />} label="All" />
           </RadioGroup>
         </FormControl>

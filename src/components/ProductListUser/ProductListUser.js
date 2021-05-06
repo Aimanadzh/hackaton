@@ -16,16 +16,19 @@ const ProductListUser = (props) => {
     const search = new URLSearchParams(history.location.search);
     return search.get("_page");
   }
+
   const handlePage = (e, page) => {
     const search = new URLSearchParams(history.location.search);
     search.set("_page", page);
     history.push(`${history.location.pathname}?${search.toString()}`);
     getProducts(history);
   };
+
   useEffect(() => {
     getProducts(props.history);
   }, []);
-  // console.log(productsData);
+
+  
   return (
     <div style={{ display: "flex", flexDirection: "row", marginTop: "45px",
     padding: "45px", borderRadius: "40px"}}>
