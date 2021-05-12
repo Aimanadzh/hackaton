@@ -1,8 +1,7 @@
 .main-footer{
-   /*background: url("./img.jpg")no-repeat;*/
    background-size: cover;
    color: black;
-   background-color: #F0EEE4;
+   background-color: #641b0e;
    padding-top: 3em;
    bottom: 0;
    width: 100%;
@@ -13,13 +12,15 @@
 
 }
 .col{
+   font-family: Georgia, 'Times New Roman', Times, serif;
    margin: 0 20px;
 }
 .row{
+   padding: 20px;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: space-around;
 }
 .list-unstyled{
    list-style-type: none;

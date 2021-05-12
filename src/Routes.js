@@ -17,12 +17,13 @@ import PrivateRoute from './components/PrivateRoute';
 import Details from './components/Details/Details';
 import Checkout from './components/OrderForm/Checkout';
 import Edit from './components/EditModal/Edit';
-import Jewerly from './components/Jewerly/Jewerly';
-import Watches from './components/Watches/Watches';
+import Model from './components/Model/Model';
+import Polo from './components/Polo/Polo';
 import Footer from './components/Footer/Footer';
-import Accessories from './components/Accessories/Accessories';
-import Decoration from './components/Decoration/Decoration';
+import Cars from './components/Cars/Cars';
 import Gift from './components/Gift/Gift';
+import Accessories from './components/Accessories/Accessories';
+
 
 
 
@@ -46,10 +47,10 @@ const Routes = () => {
             <Route exact path="/modal" component={Modal} />
             <Route exact path="/shop" component={ProductsListUser} />
             <Route exact path="/cart" component={Cart} />
-            <Route exact path="/jewerly" component={Jewerly} />
-            <Route exact path="/watches" component={Watches} />
+            <Route exact path="/model" component={Model} />
+            <Route exact path="/polo" component={Polo} />
+            <Route exact path="/cars" component={Cars} />
             <Route exact path="/accessories" component={Accessories} />
-            <Route exact path="/decoration" component={Decoration} />
             <Route exact path="/gift" component={Gift} />
           </Switch>
           <Footer/>

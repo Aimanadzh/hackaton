@@ -7,8 +7,8 @@ const Gifka = () => {
    return (
       <div>
          <div className="gifka">
-            <h4 className="gifka__title1">The Wonderlab Awaits</h4>
-            <h2 className="gifka__title1">Are you ready to play?</h2>
+            <h4 className="gifka__title1">What you waiting for ?</h4>
+            <h2 className="gifka__title1">Create your dream right now!</h2>
             <Video 
             className="gifka"
             mp4={gifka}

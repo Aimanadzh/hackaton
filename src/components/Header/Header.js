@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/brandlogoblack.svg"
+import Logo from "../../assets/images/lamborghini-text-logo.png"
 import { IconButton } from "@material-ui/core";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
@@ -46,10 +46,10 @@ const Header = () => {
                   <span></span>
                 </label>
                   <ul className="navbar__menu menu__box">
-                    <li><Link className="nav" to="/jewerly" style={{textDecoration: 'none', color: 'black'}}>Jewerly</Link></li>
-                    <li><Link className="nav" to="/watches" style={{textDecoration: 'none', color: 'black'}}>Watches</Link></li>
+                    <li><Link className="nav" to="/model" style={{textDecoration: 'none', color: 'black'}}>Model</Link></li>
+                    <li><Link className="nav" to="/polo" style={{textDecoration: 'none', color: 'black'}}>Polo</Link></li>
+                    <li><Link className="nav" to="/cars" style={{textDecoration: 'none', color: 'black'}}>Cars</Link></li>
                     <li><Link className="nav" to="/accessories" style={{textDecoration: 'none', color: 'black'}}>Accessories</Link></li>
-                    <li><Link className="nav" to="/decoration" style={{textDecoration: 'none', color: 'black'}}>Decoration</Link></li>
                     <li><Link className="nav" to="/gift" style={{textDecoration: 'none', color: 'black'}}>Gift</Link></li>
                   </ul>
               </div>

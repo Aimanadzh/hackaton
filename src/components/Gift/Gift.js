@@ -1,21 +1,21 @@
 import React from 'react';
 import "./Gift.css";
-import g1 from "../../assets/images/g1.jpeg";
-import g2 from "../../assets/images/g2.jpeg";
-import g3 from "../../assets/images/g3.jpeg";
-import g4 from "../../assets/images/g4.jpeg";
-import g5 from "../../assets/images/g5.jpeg";
-import g6 from "../../assets/images/g6.jpeg";
-import g7 from "../../assets/images/g7.jpeg";
-import g8 from "../../assets/images/g8.jpeg";
-import g9 from "../../assets/images/g9.jpeg";
-import g10 from "../../assets/images/g10.jpeg";
-import g11 from "../../assets/images/g11.jpeg";
-import g12 from "../../assets/images/g12.jpeg";
-import g13 from "../../assets/images/g13.jpeg";
-import g14 from "../../assets/images/g14.jpeg";
-import g15 from "../../assets/images/g15.jpeg";
-import g16 from "../../assets/images/g16.jpeg";
+import img1 from "../../assets/images/img1.jpg";
+import img2 from "../../assets/images/img2.jpg";
+import img3 from "../../assets/images/img3.jpg";
+import img4 from "../../assets/images/img4.jpg";
+import img5 from "../../assets/images/img5.jpg";
+import img6 from "../../assets/images/img6.jpg";
+import img7 from "../../assets/images/img7.jpg";
+import img8 from "../../assets/images/img8.jpg";
+import img9 from "../../assets/images/img9.jpg";
+import img10 from "../../assets/images/img10.jpg";
+import img11 from "../../assets/images/img11.jpg";
+import img12 from "../../assets/images/img12.jpg";
+import img13 from "../../assets/images/img13.jpg";
+import img14 from "../../assets/images/img14.jpg";
+import img15 from "../../assets/images/img15.jpg";
+import img16 from "../../assets/images/img16.jpg";
 
 
 const Gift = () => {
@@ -23,14 +23,14 @@ const Gift = () => {
       <div>
          <div class = "products">
             <div class = "container">
-                  <h1 class = "lg-title">Swarovski</h1>
+                  <h1 class = "lg-title">Lamborghini</h1>
                   <p class = "text-light">Gifts</p>
 
                   <div class = "product-items">
                      <div class = "product">
                         <div class = "product-content">
                            <div class = "product-img">
-                              <img src={g1} alt = "product image"></img>
+                              <img src={img1} alt = "product image"></img>
                            </div>
                            <div class = "product-btns">
                               <button type = "button" class = "btn-cart"> add to cart
@@ -64,7 +64,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src={g2} alt = "product image"></img>
+                                 <img src={img2} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -95,7 +95,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g3} alt = "product image"></img>
+                                 <img src = {img3} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -126,7 +126,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g4} alt = "product image"></img>
+                                 <img src = {img4} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -162,7 +162,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g5} alt = "product image"></img>
+                                 <img src = {img5} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -193,7 +193,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g6} alt = "product image"></img>
+                                 <img src = {img6} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -224,7 +224,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g7} alt = "product image"></img>
+                                 <img src = {img7} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -255,7 +255,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g8} alt = "product image"></img>
+                                 <img src = {img8} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -290,7 +290,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g9} alt = "product image"></img>
+                                 <img src = {img9} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -321,7 +321,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g10} alt = "product image"></img>
+                                 <img src = {img10} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -352,7 +352,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g11} alt = "product image"></img>
+                                 <img src = {img11} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -383,7 +383,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g12} alt = "product image"></img>
+                                 <img src = {img12} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -414,7 +414,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g13} alt = "product image"></img>
+                                 <img src = {img13} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -445,7 +445,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g14} alt = "product image"></img>
+                                 <img src = {img14} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -476,7 +476,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g15} alt = "product image"></img>
+                                 <img src = {img15} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart
@@ -507,7 +507,7 @@ const Gift = () => {
                      <div class = "product">
                            <div class = "product-content">
                               <div class = "product-img">
-                                 <img src = {g16} alt = "product image"></img>
+                                 <img src = {img16} alt = "product image"></img>
                               </div>
                               <div class = "product-btns">
                                  <button type = "button" class = "btn-cart"> add to cart

@@ -73,7 +73,7 @@ const ProductCard = ({ item }) => {
                 style={{ width: 17, marginRight: 5 }}
                 src="" ////////
               />
-              {item.price}
+              
             </div>
             <div style={{ lineHeight: "30px" }} className="product_color">
               <img
@@ -87,7 +87,7 @@ const ProductCard = ({ item }) => {
               style={{ fontSize: 27, color: "black", lineHeight: "40px" }}
               className="product_material"
             >
-              {item.material} $
+              {item.price} $
             </div>
           </Typography>
         </CardContent>

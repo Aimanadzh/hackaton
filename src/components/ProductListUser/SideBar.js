@@ -9,6 +9,8 @@ import { productsContext } from "../../context/ProductsContext";
 import Typography from "@material-ui/core/Typography";
 import Slider from "@material-ui/core/Slider";
 import Button from "@material-ui/core/Button";
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -76,7 +78,7 @@ const Sidebar = ({ history }) => {
           <Slider
             value={value}
             onChange={handleChange}
-            valueLabelDisplay="jewerly"
+            valueLabelDisplay="model"
             aria-labelledby="range-slider"
             min={0}
             max={100000}
@@ -90,17 +92,17 @@ const Sidebar = ({ history }) => {
       <Paper className={classes.paper}>
         {" "}
         <FormControl component="fieldset">
-          <FormLabel component="legend">SWAROVSKI</FormLabel>
+          <FormLabel component="legend">LAMBORGHINI</FormLabel>
           <RadioGroup
             onChange={handleChangeMemory}
             aria-label="memory"
             name="memory"
             // value={memory}
           >
-            <FormControlLabel value="Jewerly" control={<Radio />} label="Jewerly" />
-            <FormControlLabel value="Watches" control={<Radio />} label="Watches"/>
-            <FormControlLabel value="Accessories" control={<Radio />} label="Accessories"/>
-            <FormControlLabel value="Decorations" control={<Radio />} label="Decorations" />
+            <FormControlLabel value="Model" control={<Radio />} label="Model" />
+            <FormControlLabel value="Polo" control={<Radio />} label="Polo"/>
+            <FormControlLabel value="Cars" control={<Radio />} label="Cars"/>
+            <FormControlLabel value="Accessories" control={<Radio />} label="Accessories" />
             <FormControlLabel value="Gifts" control={<Radio />} label="Gifts" />
             <FormControlLabel value="all" control={<Radio />} label="All" />
           </RadioGroup>

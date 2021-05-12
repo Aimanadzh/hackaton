@@ -33,25 +33,15 @@ const Sidebar = ({ history }) => {
     search.set("category", e.target.value);
     history.push(`${history.location.pathname}?${search.toString()}`);
     getProducts(history);
-    // setMemory(e.target.value);
+    
   };
-  // const handleChangePrice = (e) => {
-  //   if (e.target.value === "all") {
-  //     history.push(`${history.location.pathname.replace("price")}`);
-  //     getProducts(history);
-  //     return;
-  //   }
-  //   const search = new URLSearchParams(history.location.search);
-  //   search.set("price", e.target.value);
-  //   history.push(`${history.location.pathname}?${search.toString()}`);
-  //   getProducts(history);
-  // };
+ 
   const classes = useStyles();
   const [value, setValue] = React.useState([0, 20000]);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  // const [memory, setMemory] = useState(getMemory());
+  
   const showChangePrice = () => {
     const search = new URLSearchParams(history.location.search);
     history.push(
@@ -60,18 +50,7 @@ const Sidebar = ({ history }) => {
     getProducts(history);
     search.toString();
   };
-  // function getMemory() {
-  //   const search = new URLSearchParams(history.location.search);
-  //   return search.get("category");
-  // }
-  //kod kubata
-  // function handleSliderValue(e, value) {
-  //   const search = new URLSearchParams(history.location.search);
-  //   search.set("price", e.target.value);
-  //   history.push(`${history.location.pathname}?${search.toString()}`);
-  //   getProducts(history);
-  //   setValue(value);
-  // }
+ 
   return (
     <Grid item m={3}>
       <Paper>
@@ -82,7 +61,7 @@ const Sidebar = ({ history }) => {
           <Slider
             value={value}
             onChange={handleChange}
-            valueLabelDisplay="jewerly"
+            valueLabelDisplay="model"
             aria-labelledby="range-slider"
             min={0}
             max={100000}
